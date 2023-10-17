@@ -12,29 +12,32 @@ import NavBar from './components/NavBar/NavBar';
 function App() {
   return (
     <>
-      <BrowserRouter>
-        <NavBar />
-        <Routes>
+      <main className='app'>
+        <BrowserRouter>
+          <NavBar />
+          <Routes>
 
-          <Route
-            path="/"
-            element={<LandingPage />}
-          />
+            <Route
+              path="/"
+              element={<LandingPage />}
+            />
 
-          <Route
-            path="/disaster/:id"
-            element=
-            {<DisasterPage />}
-          />
+            <Route
+              path="/disaster/:id"
+              element=
+              {<DisasterPage />}
+            />
 
-          <Route
-            path="/*"
-            element={<NotFoundPage
-            />}
-          />
+            <Route
+              path="/*"
+              element={<NotFoundPage
+              />}
+            />
 
-        </Routes>
-      </BrowserRouter>
+          </Routes>
+        </BrowserRouter>
+      </main>
+
     </>
   );
 }

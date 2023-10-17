@@ -8,6 +8,14 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #f7f7f8;
+
+  @include tablet {
+    @include flexbox;
+  }
+}
+
 body,
 input,
 textarea {
@@ -26,30 +34,18 @@ h1 {
   font-size: 1.777rem;
   font-weight: 700;
   line-height: 2.25rem;
-
-  @include tablet {
-    font-size: 3.157rem;
-  }
 }
 
 h2 {
   //subheader
   font-size: 1.333rem;
   font-weight: 700;
-
-  @include tablet {
-    font-size: 2.369rem;
-  }
 }
 
 h3 {
   //small header
   font-size: 1rem;
   font-weight: 700;
-
-  @include tablet {
-    font-size: 1.77rem;
-  }
 }
 
 p {
