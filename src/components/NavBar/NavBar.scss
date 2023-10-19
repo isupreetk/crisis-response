@@ -2,7 +2,7 @@
 @use "../../styles/variables.scss" as *;
 
 .navbar {
-  height: $nav-height-mob;
-  background-color: black;
-  color: white;
+  height: $nav-height;
+  background-color: $primary;
+  color: $dark-text;
 }

@@ -2,7 +2,7 @@ import './App.scss';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 // page imports
-import DisasterPage from './pages/DisasterPage/DisasterPage';
+import GetHelpPage from './pages/GetHelpPage/GetHelpPage';
 import LandingPage from './pages/LandingPage/LandingPage';
 import NotFoundPage from './pages/NotFoundPage/NotFoundPage';
 
@@ -23,9 +23,9 @@ function App() {
             />
 
             <Route
-              path="/disaster/:id"
+              path="/gethelp/:id"
               element=
-              {<DisasterPage />}
+              {<GetHelpPage />}
             />
 
             <Route
