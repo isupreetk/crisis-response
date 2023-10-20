@@ -1,6 +1,7 @@
 import './LandingPage.scss';
 import HeroBanner from '../../components/HeroBanner/HeroBanner';
 import Button from '../../components/Button/Button';
+import Mission from '../../components/Mission/Mission';
 import Support from '../../components/Support/Support';
 import SectionHeader from '../../components/SectionHeader/SectionHeader';
 
@@ -18,7 +19,8 @@ function LandingPage() {
             </div>
 
             <SectionHeader sectionHeading="Example Section Heading" />
-
+            
+            <Mission />
             <Support />
 
         </>
