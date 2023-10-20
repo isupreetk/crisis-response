@@ -1,0 +1,8 @@
+@use '../../styles/mixins.scss' as *;
+
+
+.disaster-list {
+    padding: 1rem;
+    @include flexbox($direction: column);
+    gap: 1.25rem;
+}

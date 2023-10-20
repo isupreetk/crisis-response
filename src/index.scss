@@ -10,7 +10,7 @@
 }
 
 body {
-  background-color: #f7f7f8;
+  background-color: $muted !important; //is bootstrap overriding this? 
 
   @include tablet {
     @include flexbox;
