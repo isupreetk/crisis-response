@@ -10,7 +10,7 @@
 }
 
 body {
-  background-color: #f7f7f8;
+  background-color: $muted !important; //is bootstrap overriding this? 
 
   @include tablet {
     @include flexbox;
@@ -21,7 +21,7 @@ body,
 input,
 textarea,
 button {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif !important; //whyyyyy
   color: $dark-text;
 }
 

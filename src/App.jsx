@@ -4,11 +4,14 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 // page imports
 import GetHelpPage from './pages/GetHelpPage/GetHelpPage';
 import LandingPage from './pages/LandingPage/LandingPage';
+import DonatePage from './pages/DonatePage/DonatePage';
 import NotFoundPage from './pages/NotFoundPage/NotFoundPage';
 
 // components 
 import NavBar from './components/NavBar/NavBar';
 import Footer from './components/Footer/Footer';
+
+
 
 function App() {
   return (
@@ -27,6 +30,11 @@ function App() {
               path="/gethelp/:id"
               element=
               {<GetHelpPage />}
+            />
+
+            <Route
+              path='donate/:id'
+              element={<DonatePage />}
             />
 
             <Route
