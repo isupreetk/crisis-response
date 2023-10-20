@@ -21,7 +21,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
                 <Navbar.Brand href="#" className="navbar__profile-wrapper">
                     <div className="navbar__logo">
                     <p className="navbar__title">OneToOne Relief</p>
-                        <div className='navbar__profile-container'>
+                        <div >
                             <p className='navbar__profile'>
                                 <img />
                             </p>
