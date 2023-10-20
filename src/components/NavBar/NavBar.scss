@@ -2,9 +2,12 @@
 @use "../../styles/variables.scss" as *;
 
 .navbar {
-    &__wrapper {
+    background-color: $primary;
+    color: $dark-text; 
+  
+  &__wrapper {
         // height: $nav-height-mob;
-        background: var(--hfyellow, #FFC87C);
+        // background: var(--hfyellow, #FFC87C);
         display: flex;
         justify-content: center;
         align-items: center;
