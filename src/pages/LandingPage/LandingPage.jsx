@@ -15,14 +15,12 @@ function LandingPage() {
                 <Button text="get help" />
                 <Button disabled={true} text='share your story' />
                 <Button modifier="--secondary" text='donate' />
-
             </div>
 
             <SectionHeader sectionHeading="Example Section Heading" />
-            
+
             <Mission />
             <Support />
-
         </>
     )
 }
