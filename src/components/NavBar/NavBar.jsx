@@ -6,7 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
  function NavBar() {
     return (
         <header className="navbar">
-            <Navbar collapseOnSelect expand="lg" className="navbar__wrapper">
+            <Navbar collapseOnSelect expand="" className="navbar__wrapper">
             <div className="navbar__menu">
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav" >
