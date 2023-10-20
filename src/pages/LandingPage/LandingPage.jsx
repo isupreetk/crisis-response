@@ -5,6 +5,8 @@ import DisasterList from '../../components/DisasterList/DisasterList';
 
 //data
 import disasterData from '../../data/disasters.json';
+import Support from '../../components/Support/Support';
+import SectionHeader from '../../components/SectionHeader/SectionHeader';
 
 function LandingPage() {
     return (
@@ -19,6 +21,10 @@ function LandingPage() {
                 <Button modifier="--secondary" text='donate' />
 
             </div>
+
+            <SectionHeader sectionHeading="Example Section Heading" />
+
+            <Support />
 
         </>
     )
