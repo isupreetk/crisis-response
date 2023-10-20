@@ -2,13 +2,12 @@ import './LandingPage.scss';
 import HeroBanner from '../../components/HeroBanner/HeroBanner';
 import Button from '../../components/Button/Button';
 import Support from '../../components/Support/Support';
-
+import SectionHeader from '../../components/SectionHeader/SectionHeader';
 
 function LandingPage() {
     return (
         <>
             <HeroBanner />
-
 
             <div className='button-examples'>
                 <p>Button examples</p>
@@ -17,6 +16,9 @@ function LandingPage() {
                 <Button modifier="--secondary" text='donate' />
 
             </div>
+
+            <SectionHeader sectionHeading="Example Section Heading" />
+
             <Support />
 
         </>
