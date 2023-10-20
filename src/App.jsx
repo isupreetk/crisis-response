@@ -8,6 +8,7 @@ import NotFoundPage from './pages/NotFoundPage/NotFoundPage';
 
 // components 
 import NavBar from './components/NavBar/NavBar';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
             />
 
           </Routes>
+          <Footer />
         </BrowserRouter>
       </main>
 
