@@ -12,8 +12,8 @@
 
     &__title {
         display: flex;
-    justify-content: center;
-    align-items: center;
+        justify-content: center;
+        align-items: center;
         color: $dark-text;
         text-align: center;
         font-family: Montserrat;
@@ -21,8 +21,7 @@
         font-style: normal;
         font-weight: 500;
         line-height: normal;
-    // margin-bottom: 0.75rem;
-    position: relative;
+        position: relative;
 
         &::after {
             content: '';
