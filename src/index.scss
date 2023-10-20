@@ -21,7 +21,7 @@ body,
 input,
 textarea,
 button {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif !important; //whyyyyy
   color: $dark-text;
 }
 

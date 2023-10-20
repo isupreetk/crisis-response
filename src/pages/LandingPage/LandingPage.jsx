@@ -14,13 +14,13 @@ function LandingPage() {
             <HeroBanner />
 
             <DisasterList disasterData={disasterData} />
-            <div className='button-examples'>
+            {/* <div className='button-examples'>
                 <p>Button examples</p>
                 <Button text="get help" />
                 <Button disabled={true} text='share your story' />
                 <Button modifier="--secondary" text='donate' />
 
-            </div>
+            </div> */}
 
             <SectionHeader sectionHeading="Example Section Heading" />
 
