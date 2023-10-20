@@ -2,6 +2,7 @@
 @use "./styles/variables.scss" as *;
 
 .app {
+  box-sizing: border-box;
   width: 100%;
   background-color: white;
   min-height: 100vh;

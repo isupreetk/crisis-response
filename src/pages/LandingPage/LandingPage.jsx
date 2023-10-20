@@ -1,11 +1,12 @@
 import './LandingPage.scss';
+import HeroBanner from '../../components/HeroBanner/HeroBanner';
 import Button from '../../components/Button/Button';
 
 
 function LandingPage() {
     return (
         <>
-            <h1>Crisis Response App</h1>
+            <HeroBanner />
             <Button text="Button" />
         </>
     )
