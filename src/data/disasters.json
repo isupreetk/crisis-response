@@ -1,32 +1,175 @@
 [
   {
-    "id": "84e96018-4022-434e-80bf-000ce4cd12b8",
-    "name": "Forest Fire",
+    "id": "b80e71bi66xn6mu",
+    "name": "West Kelowna Wildfire",
     "type": "fire",
-    "city": "kelowna",
+    "location": "McDougall Creek",
     "country:": "Canada",
+    "coverPhoto": "",
+    "mapPhoto": "",
+    "status": "ongoing",
+    "startDateText": "Aug 15, 2023",
+    "startDate": "08/15/2023",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam non turpis nec risus egestas scelerisque in vel tortor. Phasellus non dolor blandit, interdum diam at, tristique lectus. Donec vel dui tristique, suscipit enim ullamcorper, ultrices velit. Fusce euismod massa eu purus blandit dapibus. Ut pellentesque cursus dictum. Nullam hendrerit accumsan tincidunt. Integer rhoncus urna ipsum, nec mollis metus ornare ullamcorper. Sed ut turpis urna. I",
-    "views": "1,001,023",
-    "timestamp": 1626032763000,
+    "impacts": [
+      {
+        "metric": "homes lost",
+        "value": "200+"
+      },
+      {
+        "metric": "people evacuated",
+        "value": "10,000+"
+      },
+      {
+        "metric": "acres of forest destroyed",
+        "value": "2,400+"
+      }
+    ],
     "experiences": [
       {
         "id": "35bba08b-1b51-4153-ba7e-6da76b5ec1b9",
-        "name": "User 1",
-        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam non turpis nec risus egestas scelerisque in vel tortor.",
-        "timestamp": 1628522461000
+        "userName": "Elena Rodriguez",
+        "needsFoodAndWater": true,
+        "needsHousing": true,
+        "needsClothing": true,
+        "numComments": 5,
+        "photos": [
+          "",
+          "",
+          ""
+        ],
+        "comment": "I'm one of the many who lost their homes in the West Kelowna wildfire. I find myself with nothing, desperately in need of food, water, temporary shelter, and clothing/personal items. Every donation, no matter how small, can bring hope and relief. Your generosity can help me rebuild my life. Thank you. .",
+        "timestamp": 1692982836
       },
       {
         "id": "091de676-61af-4ee6-90de-3a7a53af7521",
-        "name": "User 2",
-        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam non turpis nec risus egestas scelerisque in vel tortor.",
-        "timestamp": 1626359541000
+        "userName": "Olivia Bennett",
+        "needsFoodAndWater": false,
+        "needsHousing": true,
+        "needsClothing": true,
+        "numComments": 9,
+        "photos": [
+          "",
+          "",
+          ""
+        ],
+        "comment": "The West Kelowna wildfire has left me with nothing but the clothes on my back. My home, my belongings, all gone. I'm desperately seeking help for temporary shelter and clothing/personal items. Your generosity can provide the essentials I need to start rebuilding my life. Thank you so much.",
+        "timestamp": 1692889236
+      }
+    ]
+  },
+  {
+    "id": "4r3uxe640dbr6nr",
+    "name": "Pemberton wildfire",
+    "type": "fire",
+    "location": "Pemberton",
+    "country:": "Canada",
+    "coverPhoto": "",
+    "mapPhoto": "",
+    "status": "ongoing",
+    "startDateText": "Aug 10, 2023",
+    "startDate": "08/10/2023",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam non turpis nec risus egestas scelerisque in vel tortor. Phasellus non dolor blandit, interdum diam at, tristique lectus. Donec vel dui tristique, suscipit enim ullamcorper, ultrices velit. Fusce euismod massa eu purus blandit dapibus. Ut pellentesque cursus dictum. Nullam hendrerit accumsan tincidunt. Integer rhoncus urna ipsum, nec mollis metus ornare ullamcorper. Sed ut turpis urna. I",
+    "impacts": [
+      {
+        "metric": "homes lost",
+        "value": "200+"
       },
       {
-        "id": "66b7d3c7-4023-47f1-a02c-520c9ca187a6",
-        "name": "User 3",
-        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam non turpis nec risus egestas scelerisque in vel tortor.",
-        "likes": 0,
-        "timestamp": 1626011132000
+        "metric": "people evacuated",
+        "value": "10,000+"
+      }
+    ],
+    "experiences": [
+      {
+        "id": "35bba08b-1b51-4153-ba7e-6da76b5ec1b9",
+        "userName": "Elena Rodriguez",
+        "needsFoodAndWater": true,
+        "needsHousing": true,
+        "needsClothing": true,
+        "numComments": 5,
+        "photos": [
+          "",
+          "",
+          ""
+        ],
+        "comment": "I'm one of the many who lost their homes in the West Kelowna wildfire. I find myself with nothing, desperately in need of food, water, temporary shelter, and clothing/personal items. Every donation, no matter how small, can bring hope and relief. Your generosity can help me rebuild my life. Thank you. .",
+        "timestamp": 1692982836
+      },
+      {
+        "id": "091de676-61af-4ee6-90de-3a7a53af7521",
+        "userName": "Olivia Bennett",
+        "needsFoodAndWater": false,
+        "needsHousing": true,
+        "needsClothing": true,
+        "numComments": 9,
+        "photos": [
+          "",
+          "",
+          ""
+        ],
+        "comment": "The West Kelowna wildfire has left me with nothing but the clothes on my back. My home, my belongings, all gone. I'm desperately seeking help for temporary shelter and clothing/personal items. Your generosity can provide the essentials I need to start rebuilding my life. Thank you so much.",
+        "timestamp": 1692889236
+      }
+    ]
+  },
+  {
+    "id": "owy9opv2yju7kyu",
+    "name": "Abbotsford Flood",
+    "type": "flood",
+    "location": "Abbotsford",
+    "country:": "Canada",
+    "coverPhoto": "",
+    "mapPhoto": "",
+    "status": "recovery",
+    "startDateText": "Aug 15, 2023 - Nov 29, 2022",
+    "endDateText": "Nov 29, 2022",
+    "startDate": "08/15/2023",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam non turpis nec risus egestas scelerisque in vel tortor. Phasellus non dolor blandit, interdum diam at, tristique lectus. Donec vel dui tristique, suscipit enim ullamcorper, ultrices velit. Fusce euismod massa eu purus blandit dapibus. Ut pellentesque cursus dictum. Nullam hendrerit accumsan tincidunt. Integer rhoncus urna ipsum, nec mollis metus ornare ullamcorper. Sed ut turpis urna. I",
+    "impacts": [
+      {
+        "metric": "homes lost",
+        "value": "200+"
+      },
+      {
+        "metric": "people evacuated",
+        "value": "10,000+"
+      },
+      {
+        "metric": "acres of forest destroyed",
+        "value": "2,400+"
+      }
+    ],
+    "experiences": [
+      {
+        "id": "35bba08b-1b51-4153-ba7e-6da76b5ec1b9",
+        "userName": "Elena Rodriguez",
+        "needsFoodAndWater": true,
+        "needsHousing": true,
+        "needsClothing": true,
+        "numComments": 5,
+        "photos": [
+          "",
+          "",
+          ""
+        ],
+        "comment": "I'm one of the many who lost their homes in the West Kelowna wildfire. I find myself with nothing, desperately in need of food, water, temporary shelter, and clothing/personal items. Every donation, no matter how small, can bring hope and relief. Your generosity can help me rebuild my life. Thank you. .",
+        "timestamp": 1692982836
+      },
+      {
+        "id": "091de676-61af-4ee6-90de-3a7a53af7521",
+        "userName": "Olivia Bennett",
+        "needsFoodAndWater": false,
+        "needsHousing": true,
+        "needsClothing": true,
+        "numComments": 9,
+        "photos": [
+          "",
+          "",
+          ""
+        ],
+        "comment": "The West Kelowna wildfire has left me with nothing but the clothes on my back. My home, my belongings, all gone. I'm desperately seeking help for temporary shelter and clothing/personal items. Your generosity can provide the essentials I need to start rebuilding my life. Thank you so much.",
+        "timestamp": 1692889236
       }
     ]
   }

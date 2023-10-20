@@ -1,6 +1,7 @@
 @use "./styles/mixins.scss" as *;
 @use "./styles/fontfaces.scss" as *;
 @use "./styles/variables.scss" as *;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
 * {
   margin: 0;
@@ -19,7 +20,7 @@ body {
 body,
 input,
 textarea {
-  font-family: sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 a,
