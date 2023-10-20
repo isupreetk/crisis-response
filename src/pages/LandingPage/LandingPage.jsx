@@ -8,8 +8,17 @@ function LandingPage() {
     return (
         <>
             <HeroBanner />
-            <Button text="Button" />
+
+
+            <div className='button-examples'>
+                <p>Button examples</p>
+                <Button text="get help" />
+                <Button disabled={true} text='share your story' />
+                <Button modifier="--secondary" text='donate' />
+
+            </div>
             <Support />
+
         </>
     )
 }
