@@ -3,10 +3,10 @@ import "./Button.scss";
 function Button({ modifier, text, icon, ...buttonAttributes }) {
     return (
         <button
-            className={`btn btn${modifier}`}
+            className={`button button${modifier}`}
             {...buttonAttributes}
         >
-            <div className={icon && "btn__text"}>{text}</div>
+            <div className="button__text">{text}</div>
         </button>
     );
 }

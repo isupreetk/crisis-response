@@ -1,7 +1,7 @@
 @use "../../styles/variables" as *;
 @use "../../styles/mixins" as *;
 
-.btn {
+.button {
   @include flexbox;
   position: relative;
   background-color: $primary;
