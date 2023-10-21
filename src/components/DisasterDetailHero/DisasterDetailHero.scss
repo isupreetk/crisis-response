@@ -11,6 +11,16 @@
         font-weight: 700;
     }
 
+    &__map-container {
+        position: relative;
+    }
+
+    &__map-disaster-status {
+        position: absolute;
+        top: 2.5rem;
+        right: 2.5rem;
+    }
+
     &__about-section {
         display: flex;
         flex-direction: column;
