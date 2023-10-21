@@ -5,13 +5,19 @@
     justify-content: center;
     align-items: center;
 
+    &__disaster-name {
+        text-transform: uppercase;
+        margin-top: 2rem;
+        font-weight: 700;
+    }
+
     &__about-section {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
         width: 100%;
-        margin-left: 2rem;
+        margin: 0rem 0rem 1rem 2rem;
         gap: 2rem;
     }
 
@@ -31,6 +37,12 @@
         // align-items: center;
         align-items: flex-start;
         width: 50%;
+        // gap: 0rem;
+    }
+
+    &__impact-value {
+        font-weight: 700;
+        margin: 0rem;
     }
 
     &__button {
@@ -39,5 +51,6 @@
         align-items: center;
         text-align: center;
         width: 80%;
+        margin-bottom: 3rem;
     }
 }
