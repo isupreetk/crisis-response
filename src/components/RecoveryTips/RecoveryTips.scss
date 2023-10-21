@@ -2,25 +2,26 @@
 @use "../../styles/variables.scss" as *;
 
 .recovery-tips {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $secondary-background;
+  padding: 16px;
+  padding-top: 2rem;
+
+  &__list {
+    width: 90%;
+  }
+
+  &__list-item {
+    border-bottom: 1px solid;
+    padding: 1rem;
+  }
+
+  &__title-container {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    background-color: $secondary-background;
-    padding-top: 2rem;
-
-    &__list {
-        width: 90%;
-    }
-
-    &__list-item {
-        border-bottom: 1px solid;
-        padding: 1rem;
-    }
-
-    &__title-container {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
+    justify-content: space-between;
+  }
 }

@@ -30,10 +30,10 @@ function NavBar() {
             {/* Links */}
             {isOpen &&
                 <div className="navbar__links">
-                    <Link className="navbar__link" to="/">Current Disasters</Link>
-                    <Link className="navbar__link" to="#">About Us</Link>
-                    <Link className="navbar__link" to="#">How you can help</Link>
-                    <Link className="navbar__link" to="#">Contact Us</Link>
+                    <Link onClick={() => setIsOpen(false)} className="navbar__link" to="/">Current Disasters</Link>
+                    <Link onClick={() => setIsOpen(false)} className="navbar__link" to="#">About Us</Link>
+                    <Link onClick={() => setIsOpen(false)} className="navbar__link" to="#">How you can help</Link>
+                    <Link onClick={() => setIsOpen(false)} className="navbar__link" to="#">Contact Us</Link>
                 </div>
             }
 

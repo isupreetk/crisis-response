@@ -6,6 +6,8 @@ import { useState, useEffect } from 'react';
 
 import DisasterDetailHero from '../../components/DisasterDetailHero/DisasterDetailHero';
 import RecoveryTips from '../../components/RecoveryTips/RecoveryTips';
+import Button from '../../components/Button/Button';
+import SectionHeader from '../../components/SectionHeader/SectionHeader';
 
 function GetHelpPage({ disasterData }) {
     const params = useParams();
@@ -22,6 +24,13 @@ function GetHelpPage({ disasterData }) {
         <div className='get-help-page'>
             <DisasterDetailHero selectedDisaster={selectedDisaster} />
             <RecoveryTips selectedDisaster={selectedDisaster} />
+
+
+            <div className="get-help-page__support">
+                <SectionHeader sectionHeading="Support impacted individuals" />
+                <Button text="Share your story" />
+            </div>
+
 
 
             {/* TODO: make into component */}
