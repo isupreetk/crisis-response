@@ -62,9 +62,9 @@
         "needsClothing": true,
         "numComments": 5,
         "photos": [
-          "",
-          "",
-          ""
+          "https://picsum.photos/200",
+          "https://picsum.photos/200",
+          "https://picsum.photos/200"
         ],
         "comment": "I'm one of the many who lost their homes in the West Kelowna wildfire. I find myself with nothing, desperately in need of food, water, temporary shelter, and clothing/personal items. Every donation, no matter how small, can bring hope and relief. Your generosity can help me rebuild my life. Thank you. .",
         "timestamp": 1692982836
@@ -76,11 +76,7 @@
         "needsHousing": true,
         "needsClothing": true,
         "numComments": 9,
-        "photos": [
-          "",
-          "",
-          ""
-        ],
+        "photos": [],
         "comment": "The West Kelowna wildfire has left me with nothing but the clothes on my back. My home, my belongings, all gone. I'm desperately seeking help for temporary shelter and clothing/personal items. Your generosity can provide the essentials I need to start rebuilding my life. Thank you so much.",
         "timestamp": 1692889236
       }
@@ -149,11 +145,7 @@
         "needsHousing": true,
         "needsClothing": true,
         "numComments": 5,
-        "photos": [
-          "",
-          "",
-          ""
-        ],
+        "photos": ["", "", ""],
         "comment": "I'm one of the many who lost their homes in the West Kelowna wildfire. I find myself with nothing, desperately in need of food, water, temporary shelter, and clothing/personal items. Every donation, no matter how small, can bring hope and relief. Your generosity can help me rebuild my life. Thank you. .",
         "timestamp": 1692982836
       },
@@ -164,11 +156,7 @@
         "needsHousing": true,
         "needsClothing": true,
         "numComments": 9,
-        "photos": [
-          "",
-          "",
-          ""
-        ],
+        "photos": ["", "", ""],
         "comment": "The West Kelowna wildfire has left me with nothing but the clothes on my back. My home, my belongings, all gone. I'm desperately seeking help for temporary shelter and clothing/personal items. Your generosity can provide the essentials I need to start rebuilding my life. Thank you so much.",
         "timestamp": 1692889236
       }
@@ -237,11 +225,7 @@
         "needsHousing": true,
         "needsClothing": true,
         "numComments": 5,
-        "photos": [
-          "",
-          "",
-          ""
-        ],
+        "photos": ["", "", ""],
         "comment": "I'm one of the many who lost their homes in the West Kelowna wildfire. I find myself with nothing, desperately in need of food, water, temporary shelter, and clothing/personal items. Every donation, no matter how small, can bring hope and relief. Your generosity can help me rebuild my life. Thank you. .",
         "timestamp": 1692982836
       },
@@ -252,11 +236,7 @@
         "needsHousing": true,
         "needsClothing": true,
         "numComments": 9,
-        "photos": [
-          "",
-          "",
-          ""
-        ],
+        "photos": ["", "", ""],
         "comment": "The West Kelowna wildfire has left me with nothing but the clothes on my back. My home, my belongings, all gone. I'm desperately seeking help for temporary shelter and clothing/personal items. Your generosity can provide the essentials I need to start rebuilding my life. Thank you so much.",
         "timestamp": 1692889236
       }

@@ -12,8 +12,10 @@ import DonatePage from './pages/DonatePage/DonatePage';
 import NotFoundPage from './pages/NotFoundPage/NotFoundPage';
 
 // components 
-import NavBar from './components/NavBar/NavBar';
+// import NavBar from './components/NavBar/NavBar';
 import Footer from './components/Footer/Footer';
+
+import disasterData from './data/disasters.json';
 
 function App() {
 
@@ -24,18 +26,18 @@ function App() {
     <>
       <main className='app'>
         <BrowserRouter>
-          <NavBar />
+          {/* <NavBar /> */}
           <Routes>
 
             <Route
               path="/"
-              element={<LandingPage />}
+              element={<LandingPage disasterData={disasterData} />}
             />
 
             <Route
               path="/gethelp/:id"
               element=
-              {<GetHelpPage disasterList={disasterList} selectedDisaster={selectedDisaster} setSelectedDisaster={setSelectedDisaster} />}
+              {<GetHelpPage disasterData={disasterData} />}
             />
 
             <Route

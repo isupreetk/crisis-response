@@ -4,13 +4,14 @@ import HeroBanner from '../../components/HeroBanner/HeroBanner';
 import DisasterList from '../../components/DisasterList/DisasterList';
 
 //data
-import disasterData from '../../data/disasters.json';
+
+// import disasterData from '../../data/disasters.json';
 
 //components
 import Mission from '../../components/Mission/Mission';
 import Support from '../../components/Support/Support';
 
-function LandingPage() {
+function LandingPage({ disasterData }) {
     return (
         <>
             <HeroBanner />

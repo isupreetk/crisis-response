@@ -1,7 +1,7 @@
 @use "./styles/mixins.scss" as *;
 @use "./styles/fontfaces.scss" as *;
 @use "./styles/variables.scss" as *;
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 
 * {
   margin: 0;
@@ -10,7 +10,7 @@
 }
 
 body {
-  background-color: $muted !important; //is bootstrap overriding this? 
+  background-color: #f5f5f5;
 
   @include tablet {
     @include flexbox;
@@ -21,7 +21,7 @@ body,
 input,
 textarea,
 button {
-  font-family: 'Montserrat', sans-serif !important; //whyyyyy
+  font-family: "Montserrat", sans-serif;
   color: $dark-text;
 }
 
