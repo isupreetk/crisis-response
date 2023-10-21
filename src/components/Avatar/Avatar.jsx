@@ -1,8 +1,8 @@
 import './Avatar.scss';
 
-function Avatar({ photoUrl }) {
+function Avatar({ photoUrl, modifier }) {
     return (
-        <div className='avatar'>
+        <div className={`avatar avatar${modifier}`}>
             <img className="avatar__img" src={photoUrl} alt="user profile" />
         </div>
     )
