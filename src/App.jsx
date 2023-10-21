@@ -1,40 +1,61 @@
 import './App.scss';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useState } from 'react';
+
+//data
+import disaster from "./data/disasters.json";
 
 // page imports
-import DisasterPage from './pages/DisasterPage/DisasterPage';
+import GetHelpPage from './pages/GetHelpPage/GetHelpPage';
 import LandingPage from './pages/LandingPage/LandingPage';
+import DonatePage from './pages/DonatePage/DonatePage';
 import NotFoundPage from './pages/NotFoundPage/NotFoundPage';
 
 // components 
 import NavBar from './components/NavBar/NavBar';
+import Footer from './components/Footer/Footer';
+
+import disasterData from './data/disasters.json';
 
 function App() {
+
+  let [disasterList, setDisasterList] = useState(disaster);
+  let [selectedDisaster, setSelectedDisaster] = useState();
+
   return (
     <>
       <main className='app'>
         <BrowserRouter>
           <NavBar />
-          <Routes>
 
-            <Route
-              path="/"
-              element={<LandingPage />}
-            />
+          <div className='app__page'>
+            <Routes>
+              <Route
+                path="/"
+                element={<LandingPage disasterData={disasterData} />}
+              />
 
-            <Route
-              path="/disaster/:id"
-              element=
-              {<DisasterPage />}
-            />
+              <Route
+                path="/gethelp/:id"
+                element=
+                {<GetHelpPage disasterData={disasterData} />}
+              />
 
-            <Route
-              path="/*"
-              element={<NotFoundPage
-              />}
-            />
+              <Route
+                path='donate/:id'
+                element={<DonatePage />}
+              />
 
-          </Routes>
+              <Route
+                path="/*"
+                element={<NotFoundPage
+                />}
+              />
+
+            </Routes>
+            <Footer />
+
+          </div>
         </BrowserRouter>
       </main>
 

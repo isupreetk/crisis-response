@@ -1,12 +1,32 @@
 import './LandingPage.scss';
-import Button from '../../components/Button/Button';
+import HeroBanner from '../../components/HeroBanner/HeroBanner';
+// import Button from '../../components/Button/Button';
+import DisasterList from '../../components/DisasterList/DisasterList';
 
+//data
 
-function LandingPage() {
+// import disasterData from '../../data/disasters.json';
+
+//components
+import Mission from '../../components/Mission/Mission';
+import Support from '../../components/Support/Support';
+
+function LandingPage({ disasterData }) {
     return (
         <>
-            <h1>Crisis Response App</h1>
-            <Button text="Button" />
+            <HeroBanner />
+
+            <DisasterList disasterData={disasterData} />
+
+            {/* <div className='button-examples'>
+                <p>Button examples</p>
+                <Button text="get help" />
+                <Button disabled={true} text='share your story' />
+                <Button modifier="--secondary" text='donate' />
+            </div> */}
+
+            <Mission />
+            <Support />
         </>
     )
 }

@@ -1,37 +1,43 @@
 /* Colors */
 
-$primary-background: #121212;
-$secondary-background: #1f1f1f;
-$light-background: #e8e8e8;
+$primary-background: white;
+$secondary-background: #fff1de;
 
-$light-text: #ededed;
-$dark-text: #121212;
+$dark-text: #523a33;
 
-$primary: #00a8a8;
-$secondary: #006666;
+$primary: #ffc87c;
+$secondary: #c6cc8d;
 
-$accent: #ffd700;
-$error: #e74c3c;
+$accent: #fedc84;
+$alert: #f00;
+$muted: #d5d5d5; // might change
 
 /* Spacing Values */
-$spacing-unit-xxs: 0.25rem;
-$spacing-unit-xs: 0.5rem;
+// only left those that used in mockup for now
+// $spacing-unit-xxs: 0.25rem;
+// $spacing-unit-xs: 0.5rem;
 $spacing-unit-sm: 1rem;
-$spacing-unit-med: 1.5rem;
-$spacing-unit-lg: 2.25rem;
-$spacing-unit-xl: 3rem;
+// $spacing-unit-med: 1.5rem;
+$spacing-unit-lg: 2rem;
+// $spacing-unit-xl: 3rem;
 
 /* Misc */
 
-$border-radius: 0.25rem;
+$border-radius-sm: 0.5625rem;
+$border-radius-lg: 0.75rem;
 $transition: 0.5s;
-$divider: 1px $primary solid;
-$nav-height-tab: 5rem;
-$nav-height-mob: 9rem;
+$nav-height: 82px;
 
-$max-form-field-width: 25rem;
-$icon-spacing-unit: 1rem;
-$big-icon: 2rem;
-$icon-size: 1rem;
+$icon-big: 2rem;
+$icon-sm: 1.375rem;
+$box-shadow: 0px 2px 12px 4px rgba(0, 0, 0, 0.1);
 
-$field-input-height: 2rem;
+$secondary-border: 2px solid $secondary;
+$primary-border: 2px solid $primary;
+
+/* Text sizing */
+
+$para-sm: 0.75rem;
+$para-med: 1rem;
+$para-lg: 1.25rem;
+$header-m: 1.5rem;

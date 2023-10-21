@@ -2,13 +2,16 @@
 @use "./styles/variables.scss" as *;
 
 .app {
+  box-sizing: border-box;
   width: 100%;
   background-color: white;
   min-height: 100vh;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: $box-shadow;
+  position: relative;
+  padding-top: $nav-height;
 
   @include tablet {
-    max-width: 450px;
-    min-width: 450px;
+    max-width: 430px;
+    min-width: 430px;
   }
 }

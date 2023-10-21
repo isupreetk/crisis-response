@@ -1,29 +1,33 @@
 @use "../../styles/variables" as *;
 @use "../../styles/mixins" as *;
 
-.btn {
+.button {
   @include flexbox;
   position: relative;
   background-color: $primary;
+  height: 2.5625rem;
   width: 100%;
-  height: 86px; //change me
   text-transform: uppercase;
-  $transition: $transition;
+  border-radius: $border-radius-sm;
+  transition: $transition;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
 
   &:hover {
     cursor: pointer;
   }
 
-  //   &--secondary {
-  //     //secondary styles
-  //   }
-
-  &__icon {
-    position: absolute;
-    left: 40px;
+  &--secondary {
+    background-color: $secondary;
   }
 
-  &__text {
-    width: 68%;
+  &--light {
+    background-color: $primary-background;
+    border: $secondary-border;
+  }
+
+  &:disabled {
+    background-color: $muted;
   }
 }
