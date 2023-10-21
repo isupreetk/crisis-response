@@ -5,6 +5,16 @@
     justify-content: center;
     align-items: center;
 
+    &__about-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 100%;
+        margin-left: 2rem;
+        gap: 2rem;
+    }
+
     &__impact-section {
         display: flex;
         align-items: center;

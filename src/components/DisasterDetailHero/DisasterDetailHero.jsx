@@ -13,8 +13,10 @@ function DisasterDetailHero({ selectedDisaster }) {
             <img src={Map} alt="location on map" />
             {/* <img src={selectedDisaster?.mapPhoto} alt="location on map" /> */}
 
-            <span>{selectedDisaster?.startDateText}</span>
-            <h3>Impact</h3>
+            <div className="disaster-detail-hero__about-section">
+                <span><strong>Started on: </strong>{selectedDisaster?.startDateText}</span>
+                <h3>Impact</h3>
+            </div>
             <div className="disaster-detail-hero__impact-section">
                 <div className="disaster-detail-hero__impact-1">
                     <p>{selectedDisaster?.impacts[0].value}</p>

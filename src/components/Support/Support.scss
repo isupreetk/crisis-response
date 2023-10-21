@@ -10,31 +10,31 @@
     gap: 2.1875rem;
     text-align: center;
 
-    &__title {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: $dark-text;
-        text-align: center;
-        font-family: Montserrat;
-        font-size: 1.5rem;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
-        position: relative;
+    // &__title {
+    //     display: flex;
+    //     justify-content: center;
+    //     align-items: center;
+    //     color: $dark-text;
+    //     text-align: center;
+    //     font-family: Montserrat;
+    //     font-size: 1.5rem;
+    //     font-style: normal;
+    //     font-weight: 500;
+    //     line-height: normal;
+    //     position: relative;
 
-        &::after {
-            content: '';
-            position: absolute;
-            top: calc(100% + 0.5rem);
-            height: 0.375rem;
-            width: 4.75rem;
-            background: $primary;
-            left: 50%;
-            transform: translateX(-50%);
-            border-radius: 1px;
-        }
-    }
+    //     &::after {
+    //         content: '';
+    //         position: absolute;
+    //         top: calc(100% + 0.5rem);
+    //         height: 0.375rem;
+    //         width: 4.75rem;
+    //         background: $primary;
+    //         left: 50%;
+    //         transform: translateX(-50%);
+    //         border-radius: 1px;
+    //     }
+    // }
 
     &__statement {
         color: $dark-text;
