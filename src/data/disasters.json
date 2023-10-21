@@ -60,28 +60,29 @@
   },
   {
     "id": "4r3uxe640dbr6nr",
-    "name": "Pemberton wildfire",
+    "name": "Prince George wildfire",
     "type": "fire",
-    "location": "Pemberton",
+    "location": "Great Beaver Lake",
     "country:": "Canada",
     "coverPhoto": "https://picsum.photos/425/260",
     "mapPhoto": "",
     "status": "ongoing",
-    "startDateText": "Aug 10, 2023",
+    "startDateText": "Jul 1, 2023",
+    "endDateText": "Jul 6, 2023",
     "startDate": "08/10/2023",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam non turpis nec risus egestas scelerisque in vel tortor. Phasellus non dolor blandit, interdum diam at, tristique lectus. Donec vel dui tristique, suscipit enim ullamcorper, ultrices velit. Fusce euismod massa eu purus blandit dapibus. Ut pellentesque cursus dictum. Nullam hendrerit accumsan tincidunt. Integer rhoncus urna ipsum, nec mollis metus ornare ullamcorper. Sed ut turpis urna. I",
     "impacts": [
       {
         "metric": "homes lost",
-        "value": "200+"
+        "value": "20+"
       },
       {
         "metric": "people evacuated",
-        "value": "10,000+"
+        "value": "2,000+"
       },
       {
         "metric": "acres of forest destroyed",
-        "value": "2,400+"
+        "value": "1,500+"
       }
     ],
     "experiences": [
@@ -121,27 +122,27 @@
     "id": "owy9opv2yju7kyu",
     "name": "Abbotsford Flood",
     "type": "flood",
-    "location": "Abbotsford",
+    "location": "Sumas Prairie",
     "country:": "Canada",
     "coverPhoto": "https://picsum.photos/425/260",
     "mapPhoto": "",
     "status": "recovery",
-    "startDateText": "Aug 15, 2023",
+    "startDateText": "Nov 12, 2022",
     "endDateText": "Nov 29, 2022",
     "startDate": "08/15/2023",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam non turpis nec risus egestas scelerisque in vel tortor. Phasellus non dolor blandit, interdum diam at, tristique lectus. Donec vel dui tristique, suscipit enim ullamcorper, ultrices velit. Fusce euismod massa eu purus blandit dapibus. Ut pellentesque cursus dictum. Nullam hendrerit accumsan tincidunt. Integer rhoncus urna ipsum, nec mollis metus ornare ullamcorper. Sed ut turpis urna. I",
     "impacts": [
       {
-        "metric": "homes lost",
-        "value": "200+"
+        "metric": "properties lost",
+        "value": "1,100+"
       },
       {
         "metric": "people evacuated",
-        "value": "10,000+"
+        "value": "3,300+"
       },
       {
-        "metric": "acres of forest destroyed",
-        "value": "2,400+"
+        "metric": "livestock lives lost",
+        "value": "640,000+"
       }
     ],
     "experiences": [
