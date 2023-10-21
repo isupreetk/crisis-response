@@ -22,8 +22,12 @@
     background-color: $secondary;
   }
 
+  &--light {
+    background-color: $primary-background;
+    border: $secondary-border;
+  }
+
   &:disabled {
     background-color: $muted;
   }
-
 }

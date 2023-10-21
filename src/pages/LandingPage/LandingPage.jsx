@@ -4,11 +4,11 @@ import Button from '../../components/Button/Button';
 import DisasterList from '../../components/DisasterList/DisasterList';
 
 //data
-import disasterData from '../../data/disasters.json';
+
 import Support from '../../components/Support/Support';
 import SectionHeader from '../../components/SectionHeader/SectionHeader';
 
-function LandingPage() {
+function LandingPage({ disasterData }) {
     return (
         <>
             <HeroBanner />

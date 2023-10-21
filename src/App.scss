@@ -6,7 +6,7 @@
   width: 100%;
   background-color: white;
   min-height: 100vh;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: $box-shadow;
 
   @include tablet {
     max-width: 450px;

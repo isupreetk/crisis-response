@@ -1,2 +1,12 @@
 @use "../../styles/mixins.scss" as *;
 @use "../../styles/variables.scss" as *;
+
+.get-help-page {
+  padding: 16px; //change to side padding
+}
+
+.comment-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

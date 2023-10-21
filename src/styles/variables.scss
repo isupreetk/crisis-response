@@ -1,17 +1,16 @@
 /* Colors */
 
-$primary-background: #000;
-$secondary-background: #FFF1DE;
+$primary-background: white;
+$secondary-background: #fff1de;
 
-$dark-text: #523A33;
+$dark-text: #523a33;
 
-$primary: #FFC87C;
-$secondary: #C6CC8D;
+$primary: #ffc87c;
+$secondary: #c6cc8d;
 
-$accent: #FEDC84;
+$accent: #fedc84;
 $alert: #f00;
-$muted: #D5D5D5; // might change
-
+$muted: #d5d5d5; // might change
 
 /* Spacing Values */
 // only left those that used in mockup for now
@@ -24,15 +23,17 @@ $spacing-unit-lg: 2rem;
 
 /* Misc */
 
-$border-radius-sm: .5625rem;
+$border-radius-sm: 0.5625rem;
 $border-radius-lg: 0.75rem;
 $transition: 0.5s;
 $nav-height: 5.125rem;
 
 $icon-big: 2rem;
 $icon-sm: 1.375rem;
+$box-shadow: 0px 2px 12px 4px rgba(0, 0, 0, 0.1);
 
-
+$secondary-border: 2px solid $secondary;
+$primary-border: 2px solid $primary;
 
 /* Text sizing */
 

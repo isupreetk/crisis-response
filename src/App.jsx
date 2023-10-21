@@ -11,7 +11,7 @@ import NotFoundPage from './pages/NotFoundPage/NotFoundPage';
 import NavBar from './components/NavBar/NavBar';
 import Footer from './components/Footer/Footer';
 
-
+import disasterData from './data/disasters.json';
 
 function App() {
   return (
@@ -23,13 +23,13 @@ function App() {
 
             <Route
               path="/"
-              element={<LandingPage />}
+              element={<LandingPage disasterData={disasterData} />}
             />
 
             <Route
               path="/gethelp/:id"
               element=
-              {<GetHelpPage />}
+              {<GetHelpPage disasterData={disasterData} />}
             />
 
             <Route

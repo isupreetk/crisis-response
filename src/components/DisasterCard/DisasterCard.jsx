@@ -6,7 +6,6 @@ import recovery from '../../assets/icons/recovery.svg';
 
 function DisasterCard({ disaster }) {
     const navigate = useNavigate();
-    console.log('disaster card', disaster);
 
     return (
         <article className='disaster-card'>
