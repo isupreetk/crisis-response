@@ -2,7 +2,8 @@
   {
     "id": "b80e71bi66xn6mu",
     "name": "West Kelowna Wildfire",
-    "type": "fire",
+    "type": "wildfire",
+    "title": "wildfire recovery tips",
     "location": "McDougall Creek",
     "country:": "Canada",
     "coverPhoto": "https://picsum.photos/425/260",
@@ -23,6 +24,33 @@
       {
         "metric": "acres of forest destroyed",
         "value": "2,400+"
+      }
+    ],
+    "tips": [
+      {
+        "title": "Ensure Safety First",
+        "content1": "Wait for Authorities: Do not return to your home or the affected area until authorities declare it safe. Listen to local news and follow official instructions.",
+        "content2": "Wear Protective Gear: When inspecting your property, wear proper protective clothing, including gloves, masks, and long-sleeved shirts, to avoid exposure to ash and debris."
+      },
+      {
+        "title": "Contact Insurance Company",
+        "content1": "Notify Your Insurance Provider: Contact your insurance company as soon as possible to report the damage. Document the damage with photographs and videos before cleaning up or making any repairs.",
+        "content2": "Understand Your Policy: Understand what your insurance policy covers. Ask questions if you are uncertain about any aspect of your coverage."
+      },
+      {
+        "title": "Document & Assess Damage",
+        "content1": "Document Extensively: Take photographs and videos of the damage to your property and belongings. This documentation will be crucial for insurance claims and disaster assistance applications.",
+        "content2": "Make a Detailed Inventory: Understand what your insurance policy covers. Ask questions if you are uncertain about any aspect of your coverage."
+      },
+      {
+        "title": "Seek Disaster Assistance",
+        "content1": "Apply for Assistance: While government programs may not provide immediate recovery and relief, we recommend that you still apply for assistance from government programs.",
+        "content2": "Get help by sharing your story below: Connect with others who've faced the same natural disaster and express your needs. Together, we can match your needs with generous donors who are looking to provide 1-to-1 support. "
+      },
+      {
+        "title": "Take Care of Yourself",
+        "content1": "Monitor Health: Pay attention to your physical and mental health. Wildfire aftermath can be stressful; seek medical attention if you feel unwell.",
+        "content2": "Seek Support: Don't hesitate to talk to friends, family, or a mental health professional about your feelings. Natural disasters can be emotionally overwhelming, and it's essential to seek support when needed."
       }
     ],
     "experiences": [
@@ -61,7 +89,8 @@
   {
     "id": "4r3uxe640dbr6nr",
     "name": "Prince George wildfire",
-    "type": "fire",
+    "type": "wildfire",
+    "title": "wildfire recovery tips",
     "location": "Great Beaver Lake",
     "country:": "Canada",
     "coverPhoto": "https://picsum.photos/425/260",
@@ -83,6 +112,33 @@
       {
         "metric": "acres of forest destroyed",
         "value": "1,500+"
+      }
+    ],
+    "tips": [
+      {
+        "title": "Ensure Safety First",
+        "content1": "Wait for Authorities: Do not return to your home or the affected area until authorities declare it safe. Listen to local news and follow official instructions.",
+        "content2": "Wear Protective Gear: When inspecting your property, wear proper protective clothing, including gloves, masks, and long-sleeved shirts, to avoid exposure to ash and debris."
+      },
+      {
+        "title": "Contact Insurance Company",
+        "content1": "Notify Your Insurance Provider: Contact your insurance company as soon as possible to report the damage. Document the damage with photographs and videos before cleaning up or making any repairs.",
+        "content2": "Understand Your Policy: Understand what your insurance policy covers. Ask questions if you are uncertain about any aspect of your coverage."
+      },
+      {
+        "title": "Document & Assess Damage",
+        "content1": "Document Extensively: Take photographs and videos of the damage to your property and belongings. This documentation will be crucial for insurance claims and disaster assistance applications.",
+        "content2": "Make a Detailed Inventory: Understand what your insurance policy covers. Ask questions if you are uncertain about any aspect of your coverage."
+      },
+      {
+        "title": "Seek Disaster Assistance",
+        "content1": "Apply for Assistance: While government programs may not provide immediate recovery and relief, we recommend that you still apply for assistance from government programs.",
+        "content2": "Get help by sharing your story below: Connect with others who've faced the same natural disaster and express your needs. Together, we can match your needs with generous donors who are looking to provide 1-to-1 support. "
+      },
+      {
+        "title": "Take Care of Yourself",
+        "content1": "Monitor Health: Pay attention to your physical and mental health. Wildfire aftermath can be stressful; seek medical attention if you feel unwell.",
+        "content2": "Seek Support: Don't hesitate to talk to friends, family, or a mental health professional about your feelings. Natural disasters can be emotionally overwhelming, and it's essential to seek support when needed."
       }
     ],
     "experiences": [
@@ -122,6 +178,7 @@
     "id": "owy9opv2yju7kyu",
     "name": "Abbotsford Flood",
     "type": "flood",
+    "title": "flood recovery tips",
     "location": "Sumas Prairie",
     "country:": "Canada",
     "coverPhoto": "https://picsum.photos/425/260",
@@ -143,6 +200,33 @@
       {
         "metric": "livestock lives lost",
         "value": "640,000+"
+      }
+    ],
+    "tips": [
+      {
+        "title": "Assess Structural Damage",
+        "content1": "Inspect Foundations: Check for cracks or shifts in your home's foundation. Structural integrity is vital for safety.",
+        "content2": "Examine Walls and Roofs: Look for water damage, warping, or discolouration on walls and ceilings. Address any visible issues promptly."
+      },
+      {
+        "title": "Health Precautions",
+        "content1": "Avoid Contaminated Water: Do not consume or come into contact with floodwater, as it may contain harmful bacteria or chemicals.",
+        "content2": "Protective Gear: Use gloves, masks, and boots when cleaning up to minimize exposure to contaminants."
+      },
+      {
+        "title": "Financial Recovery",
+        "content1": "Contact Insurance: Report the damage to your insurance company as soon as possible. Keep records of all communication and documentation.",
+        "content2": "Get help by sharing your story below: Connect with others who've faced the same natural disaster and express your needs. Together, we can match your needs with generous donors who are looking to provide 1-to-1 support. "
+      },
+      {
+        "title": "Seek Disaster Assistance",
+        "content1": "Apply for Assistance: While government programs may not provide immediate recovery and relief, we recommend that you still apply for assistance from government programs.",
+        "content2": "Get help by sharing your story below: Connect with others who've faced the same natural disaster and express your needs. Together, we can match your needs with generous donors who are looking to provide 1-to-1 support. "
+      },
+      {
+        "title": "Take Care of Yourself",
+        "content1": "Monitor Health: Pay attention to your physical and mental health. Wildfire aftermath can be stressful; seek medical attention if you feel unwell.",
+        "content2": "Seek Support: Don't hesitate to talk to friends, family, or a mental health professional about your feelings. Natural disasters can be emotionally overwhelming, and it's essential to seek support when needed."
       }
     ],
     "experiences": [

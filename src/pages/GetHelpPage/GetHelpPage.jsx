@@ -1,8 +1,9 @@
-import DisasterDetailHero from '../../components/DisasterDetailHero/DisasterDetailHero';
 import './GetHelpPage.scss';
 import { useParams } from 'react-router-dom';
-import { useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
+import DisasterDetailHero from '../../components/DisasterDetailHero/DisasterDetailHero';
+import RecoveryTips from '../../components/RecoveryTips/RecoveryTips';
 
 function GetHelpPage({ disasterList, selectedDisaster, setSelectedDisaster }) {
 
@@ -15,6 +16,7 @@ function GetHelpPage({ disasterList, selectedDisaster, setSelectedDisaster }) {
     return (
         <>
             <DisasterDetailHero selectedDisaster={selectedDisaster} />
+            <RecoveryTips selectedDisaster={selectedDisaster} />
         </>
     )
 }
