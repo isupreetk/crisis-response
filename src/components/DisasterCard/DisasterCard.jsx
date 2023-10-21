@@ -17,7 +17,7 @@ function DisasterCard({ disaster }) {
             <div className='disaster-card__footer'>
                 <div className='disaster-card__footer-text'>
                     <h4 className='disaster-card__name'>{disaster.name}</h4>
-                    <p className='disaster-card__date'>
+                    <div className='disaster-card__date'>
                         {disaster.status == "ongoing"
                             ? <p className='disaster-card__date'>
                                 <span className='disaster-card__date--highlight'>
@@ -27,7 +27,7 @@ function DisasterCard({ disaster }) {
                             </p>
                             : <p>{disaster.startDateText} - {disaster.endDateText}</p>
 
-                        }   </p>
+                        }   </div>
                 </div>
 
                 <div className="disaster-card__buttons">

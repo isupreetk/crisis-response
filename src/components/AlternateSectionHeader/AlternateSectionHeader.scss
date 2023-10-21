@@ -1,23 +1,16 @@
 @use "../../styles/mixins.scss" as *;
 @use "../../styles/variables.scss" as *;
 
-.section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.6875rem;
-}
-
-.section-heading {
+.alternate-section-heading {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.5rem;
     color: $dark-text;
-    text-transform: uppercase;
-    line-height: normal;
     text-align: center;
-    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
     position: relative;
 
     &::after {
@@ -26,10 +19,9 @@
         top: calc(100% + 0.5rem);
         height: 0.375rem;
         width: 4.75rem;
-        background: $secondary;
+        background: $primary;
         left: 50%;
         transform: translateX(-50%);
         border-radius: 1px;
     }
-
 }
