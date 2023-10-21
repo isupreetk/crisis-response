@@ -12,7 +12,7 @@ import DonatePage from './pages/DonatePage/DonatePage';
 import NotFoundPage from './pages/NotFoundPage/NotFoundPage';
 
 // components 
-import NavBar from './components/NavBar/NavBar';
+// import NavBar from './components/NavBar/NavBar';
 import Footer from './components/Footer/Footer';
 
 import disasterData from './data/disasters.json';
@@ -26,7 +26,7 @@ function App() {
     <>
       <main className='app'>
         <BrowserRouter>
-          <NavBar />
+          {/* <NavBar /> */}
           <Routes>
 
             <Route

@@ -9,15 +9,14 @@ import RecoveryTips from '../../components/RecoveryTips/RecoveryTips';
 
 function GetHelpPage({ disasterData }) {
     const params = useParams();
+
     const selectedDisaster = disasterData.find((disaster => disaster.id === params.id));
 
-
+    //might want to use state later
+    // const [selectedDisaster, setSelectedDisaster] = disasterData.find((disaster => disaster.id === params.id));
     // useEffect(() => {
-    //     setSelectedDisaster((disasterList.find((disaster) => disaster.id === params.id)));
-    // }, [])
-
-    console.log('current disaster experiences', selectedDisaster.experiences);
-
+    //     setSelectedDisaster(disasterData.find((disaster => disaster.id === params.id)));
+    // }, [params])
 
     return (
         <div className='get-help-page'>
@@ -39,15 +38,5 @@ function GetHelpPage({ disasterData }) {
     )
 }
 
-// function GetHelpPage({ disasterList, selectedDisaster, setSelectedDisaster }) {
 
-
-
-//         return (
-//             <>
-//                 <DisasterDetailHero selectedDisaster={selectedDisaster} />
-//                 <RecoveryTips selectedDisaster={selectedDisaster} />
-//             </>
-//         )
-//     }
 export default GetHelpPage;
