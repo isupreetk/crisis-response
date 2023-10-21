@@ -1,8 +1,8 @@
 import "./AlternateSectionHeader.scss";
 
-function AlternateSectionHeader({alternateSectionHeading}) {
+function AlternateSectionHeader({ alternateSectionHeading, modifier }) {
     return (
-        <h3 className="alternate-section-heading">{alternateSectionHeading}</h3>
+        <h3 className={`alternate-section-heading alternate-section-heading${modifier}`}>{alternateSectionHeading}</h3>
     )
 }
 

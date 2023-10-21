@@ -7,9 +7,11 @@
   background-color: white;
   min-height: 100vh;
   box-shadow: $box-shadow;
+  position: relative;
+  padding-top: $nav-height;
 
   @include tablet {
-    max-width: 450px;
-    min-width: 450px;
+    max-width: 430px;
+    min-width: 430px;
   }
 }

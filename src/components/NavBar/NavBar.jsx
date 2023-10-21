@@ -1,37 +1,44 @@
-// import React from "react";
-// import "./NavBar.scss";
-// import { Nav, Navbar } from "react-bootstrap";
-// import "bootstrap/dist/css/bootstrap.min.css";
 
-// function NavBar() {
-//     return (
-//         <header className="navbar">
-//             <Navbar collapseOnSelect expand="" className="navbar__wrapper">
-//                 <div className="navbar__menu">
-//                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-//                     <Navbar.Collapse id="responsive-navbar-nav" >
-//                         <Nav className="mr-auto">
-//                             <Nav.Link href="#">IMMINENT DISASTERS</Nav.Link>
-//                             <Nav.Link href="#">ABOUT US</Nav.Link>
-//                             <Nav.Link href="#">HOW YOU CAN HELP</Nav.Link>
-//                             <Nav.Link href="#">CONTACT US</Nav.Link>
-//                         </Nav>
-//                     </Navbar.Collapse>
-//                 </div>
-//                 <Navbar.Brand href="#" className="navbar__profile-wrapper">
-//                     <div className="navbar__logo">
-//                         <p className="navbar__title">OneToOne Relief</p>
-//                         <div >
-//                             <p className='navbar__profile'>
-//                                 <img />
-//                             </p>
-//                         </div>
-//                     </div>
-//                 </Navbar.Brand>
+import Avatar from "../Avatar/Avatar";
+import menuIcon from '../../assets/icons/hamburger.svg';
+import closeX from '../../assets/icons/closingX.svg';
 
-//             </Navbar>
-//         </header>
-//     );
-// }
+import "./NavBar.scss";
 
-// export default NavBar;
+import { useState } from "react";
+import { Link } from "react-router-dom";
+
+function NavBar() {
+    const [isOpen, setIsOpen] = useState(false);
+
+    return (
+        <nav className="navbar">
+
+            <div className="navbar__top">
+                <div className="navbar__left">
+                    <img
+                        src={isOpen ? closeX : menuIcon}
+                        alt="close X icon"
+                        onClick={() => setIsOpen(prev => !prev)}
+                        className="navbar__menu"
+                    />
+                    <p className="navbar__logo">OneToOne Relief</p>
+                </div>
+                <Avatar photoUrl="https://picsum.photos/200" modifier='--nav' />
+            </div>
+
+            {/* Links */}
+            {isOpen &&
+                <div className="navbar__links">
+                    <Link onClick={() => setIsOpen(false)} className="navbar__link" to="/">Current Disasters</Link>
+                    <Link onClick={() => setIsOpen(false)} className="navbar__link" to="#">About Us</Link>
+                    <Link onClick={() => setIsOpen(false)} className="navbar__link" to="#">How you can help</Link>
+                    <Link onClick={() => setIsOpen(false)} className="navbar__link" to="#">Contact Us</Link>
+                </div>
+            }
+
+        </nav>
+    );
+}
+
+export default NavBar;

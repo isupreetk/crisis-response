@@ -2,15 +2,18 @@
 @use "../../styles/mixins" as *;
 
 .mission {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-    margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 19px;
+  line-height: 37px;
+  width: 100%;
+  margin-top: 64px;
+  margin-bottom: 64px;
 
-    &__statement {
-        width: 80%;
-    }
+  &__statement {
+    width: 80%;
+  }
 }
