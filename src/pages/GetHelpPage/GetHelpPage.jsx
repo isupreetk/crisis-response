@@ -1,11 +1,23 @@
-import './GetHelpPage';
+import './GetHelpPage.scss';
 import { useParams } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 
-function GetHelpPage() {
+import DisasterDetailHero from '../../components/DisasterDetailHero/DisasterDetailHero';
+import RecoveryTips from '../../components/RecoveryTips/RecoveryTips';
+
+function GetHelpPage({ disasterList, selectedDisaster, setSelectedDisaster }) {
+
     const params = useParams();
 
+    useEffect(() => {
+        setSelectedDisaster((disasterList.find((disaster) => disaster.id === params.id)));
+    }, [])
+
     return (
-        <h1>Get Help Page for disaster id {params.id}</h1>
+        <>
+            <DisasterDetailHero selectedDisaster={selectedDisaster} />
+            <RecoveryTips selectedDisaster={selectedDisaster} />
+        </>
     )
 }
 
