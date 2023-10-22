@@ -18,7 +18,7 @@ function ExperienceComment({ experience }) {
     return (
         <article className='comment'>
             <div className="comment__header">
-                <Avatar photoUrl="https://picsum.photos/200" />
+                <Avatar photoUrl={experience.userProfilePhoto} />
                 <div className="comment__header-text">
                     <div className="comment__name-date">
                         <p className="comment__label">{experience.userName}</p>
@@ -31,15 +31,20 @@ function ExperienceComment({ experience }) {
                 </div>
             </div>
 
-            <section className="comment__needs">
-                <p className='comment__needs-label'>Immediate Needs</p>
-                <div className="comment__needs-container">
-                    {experience.needsFoodAndWater && <NeedLabel need="Food & Water" />}
-                    {experience.needsHousing && <NeedLabel need="Temporary Housing" />}
-                    {experience.needsClothing && <NeedLabel need="Clothing & Personal Items" />}
-                </div>
+            {(experience.needsClothing || experience.needsFoodAndWater || experience.needsHousing) &&
 
-            </section>
+                <section className="comment__needs">
+                    <p className='comment__needs-label'>Immediate Needs</p>
+                    <div className="comment__needs-container">
+                        {experience.needsFoodAndWater && <NeedLabel need="Food & Water" />}
+                        {experience.needsHousing && <NeedLabel need="Temporary Housing" />}
+                        {experience.needsClothing && <NeedLabel need="Clothing & Personal Items" />}
+                    </div>
+                </section>
+
+
+            }
+
 
             <div className='comment__comment'>
                 <p>{experience.comment}</p>
