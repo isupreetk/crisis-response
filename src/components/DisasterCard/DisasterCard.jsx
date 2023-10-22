@@ -33,7 +33,7 @@ function DisasterCard({ disaster }) {
                 <div className="disaster-card__buttons">
 
                     <Button text='Get help' onClick={() => navigate(`/gethelp/${disaster.id}`)} />
-                    <Button text='Donate' modifier="--secondary" onClick={() => { navigate(`/donate/${disaster.id}`) }} />
+                    <Button text='Donate' modifier="--secondary" onClick={() => { navigate(`/donate/${disaster.type}`) }} />
                 </div>
             </div>
         </article >

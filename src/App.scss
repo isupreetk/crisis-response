@@ -9,6 +9,11 @@
   box-shadow: $box-shadow;
   position: relative;
   padding-top: $nav-height;
+  //   @include flexbox($direction: column, $justify-content: space-between);
+
+  &__page {
+    min-height: calc(100vh - $nav-height); //include footer height
+  }
 
   @include tablet {
     max-width: 430px;
