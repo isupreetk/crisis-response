@@ -2,12 +2,39 @@ import './ShareStoryModal.scss';
 import Button from '../Button/Button';
 import uploadIcon from '../../assets/icons/upload.svg';
 import Avatar from '../Avatar/Avatar';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { v4 as uuidv4 } from 'uuid';
 
 
-
-function ShareStoryModal({ show, closeHandler }) {
+function ShareStoryModal({ show, closeHandler, selectedDisaster, addExperienceComment }) {
     const [storyText, setStoryText] = useState('');
+    const [needs, setNeeds] = useState({
+        needsFood: true,
+        needsClothing: false,
+        needsHousing: false,
+    })
+
+
+    const submitHandler = (e) => {
+        e.preventDefault();
+
+        const newExperienceComment = {
+            id: uuidv4(),
+            userName: "Charles Mateus",
+            userProfilePhoto: "/images/profile/CurrentUser.jpg",
+            needsFoodAndWater: needs.needsFood,
+            needsHousing: needs.needsHousing,
+            needsClothing: needs.needsClothing,
+            numComments: 0,
+            photos: [],
+            comment: storyText,
+            timestamp: Math.floor(Date.now() / 1000)
+        }
+
+        addExperienceComment(newExperienceComment, selectedDisaster.id);
+        closeHandler();
+
+    }
 
     if (!show) return null;
     return (
@@ -20,7 +47,7 @@ function ShareStoryModal({ show, closeHandler }) {
                     <p className="modal__close" onClick={closeHandler}>Cancel</p>
                 </div>
 
-                <form className="story-form">
+                <form className="story-form" onSubmit={(e) => submitHandler(e)}>
                     <p className='story-form__attention'>* Mandatory Fields</p>
                     <div className='story-form__form-section'>
                         <label
@@ -36,10 +63,7 @@ function ShareStoryModal({ show, closeHandler }) {
                             className='story-form__story-field'
                             placeholder="Share your personal experience here..."
                             value={storyText}
-                            onChange={(e) => {
-                                console.log(e)
-                                setStoryText(e.target.value)
-                            }}
+                            onChange={e => { setStoryText(e.target.value) }}
                         >
 
                         </textarea>
@@ -63,9 +87,16 @@ function ShareStoryModal({ show, closeHandler }) {
                                 <input
                                     type="checkbox"
                                     id='food-checkbox'
+                                    value="needsFood"
+                                    checked={needs.needsFood}
+                                    onChange={() => {
+                                        setNeeds(prev => {
+                                            return { ...prev, needsFood: !prev.needsFood };
+                                        })
+                                    }}
                                 ></input>
                                 <label
-                                    htmlfor="food-checkbox" className='story-form__checkbox-label'>Food & Water
+                                    htmlFor="food-checkbox" className='story-form__checkbox-label'>Food & Water
                                 </label>
                             </div>
 
@@ -73,18 +104,35 @@ function ShareStoryModal({ show, closeHandler }) {
                                 <input
                                     type="checkbox"
                                     id='housing-checkbox'
+                                    value="needsHousing"
+                                    checked={needs.needsHousing}
+                                    onChange={() => {
+                                        setNeeds(prev => {
+                                            return { ...prev, needsHousing: !prev.needsHousing };
+                                        })
+                                    }}
                                 ></input>
                                 <label
-                                    htmlfor="housing-checkbox" className='story-form__checkbox-label'>Temporary Housing
+                                    htmlFor="housing-checkbox" className='story-form__checkbox-label'>Temporary Housing
                                 </label>
                             </div>
                             <div className='story-form__checkbox-field'>
                                 <input
                                     type="checkbox"
                                     id='clothing-checkbox'
+                                    value="needsClothing"
+                                    checked={needs.needsClothing}
+                                    onChange={() => {
+                                        setNeeds(prev => {
+                                            return { ...prev, needsClothing: !prev.needsClothing };
+                                        })
+                                    }}
+
                                 ></input>
                                 <label
-                                    htmlfor="clothing-checkbox" className='story-form__checkbox-label'>Clothing & Personal Items
+                                    htmlFor="clothing-checkbox"
+                                    className='story-form__checkbox-label'>
+                                    Clothing & Personal Items
                                 </label>
                             </div>
                         </div>

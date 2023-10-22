@@ -54,7 +54,7 @@ function ExperienceComment({ experience }) {
                 <div className='comment__photos'>
                     {
                         experience.photos.map(
-                            photo => <PostPhoto photoUrl={photo} />
+                            (photo, index) => <PostPhoto photoUrl={photo} key={index} />
                         )
                     }
                 </div>

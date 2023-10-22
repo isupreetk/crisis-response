@@ -19,8 +19,19 @@ import disasterData from './data/disasters.json';
 
 function App() {
 
-  let [disasterList, setDisasterList] = useState(disaster);
+  let [disasterList, setDisasterList] = useState(disasterData);
   let [selectedDisaster, setSelectedDisaster] = useState();
+
+
+  const addExperienceComment = (comment, disasterId) => {
+    const disasterCopy = disasterList;
+    disasterCopy.find(disaster => disaster.id === disasterId).experiences.push(comment)
+    disasterCopy.find(disaster => disaster.id === disasterId).experiences.sort((a, b) => b.timestamp - a.timestamp);
+    setDisasterList(disasterCopy);
+
+  }
+
+
 
   return (
     <>
@@ -32,13 +43,13 @@ function App() {
             <Routes>
               <Route
                 path="/"
-                element={<LandingPage disasterData={disasterData} />}
+                element={<LandingPage disasterData={disasterList} />}
               />
 
               <Route
                 path="/gethelp/:id"
                 element=
-                {<GetHelpPage disasterData={disasterData} />}
+                {<GetHelpPage disasterData={disasterList} addExperienceComment={addExperienceComment} />}
               />
 
               <Route
