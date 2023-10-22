@@ -7,9 +7,9 @@ function RecoveryTips({ selectedDisaster }) {
         <section className="recovery-tips">
             <SectionHeader sectionHeading={selectedDisaster?.title} />
             <ol className="recovery-tips__list">
-                {selectedDisaster?.tips.map((tip) => {
+                {selectedDisaster?.tips.map((tip, index) => {
                     return (
-                        <li className="recovery-tips__list-item">
+                        <li key={index} className="recovery-tips__list-item">
                             <div className="recovery-tips__title-container">
                                 <h5>{tip.title}</h5>
                                 <img src={RemoveIcon} alt="remove icon" />

@@ -10,7 +10,7 @@ import Button from '../../components/Button/Button';
 import SectionHeader from '../../components/SectionHeader/SectionHeader';
 import ShareStoryModal from '../../components/ShareStoryModal/ShareStoryModal';
 
-function GetHelpPage({ disasterData }) {
+function GetHelpPage({ disasterData, addExperienceComment }) {
 
     const [showStoryModal, setShowStoryModal] = useState(false);
 
@@ -28,7 +28,12 @@ function GetHelpPage({ disasterData }) {
             <div className="get-help-page__support">
                 <SectionHeader sectionHeading="Support impacted individuals" />
                 <Button text="Share your story" onClick={() => setShowStoryModal(true)} />
-                <ShareStoryModal show={showStoryModal} closeHandler={() => setShowStoryModal(false)} />
+                <ShareStoryModal
+                    show={showStoryModal}
+                    closeHandler={() => setShowStoryModal(false)}
+                    addExperienceComment={addExperienceComment}
+                    selectedDisaster={selectedDisaster}
+                />
             </div>
 
 

@@ -45,9 +45,9 @@ function DisasterDetailHero({ selectedDisaster }) {
                 <AlternateSectionHeader alternateSectionHeading="Impact" />
 
                 <div className="disaster-detail-hero__impact-list">
-                    {selectedDisaster?.impacts.map((impact) => {
+                    {selectedDisaster?.impacts.map((impact, index) => {
                         return (
-                            <div className="disaster-detail-hero__impact-1">
+                            <div className="disaster-detail-hero__impact-1" key={index}>
                                 <p className="disaster-detail-hero__impact-value">{impact.value}</p>
                                 <p className="disaster-detail-hero__impact-metric">{impact.metric}</p>
                             </div>
