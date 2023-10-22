@@ -1,17 +1,16 @@
 import "./DisasterDetailHero.scss";
-// import Map from "../../assets/images/maps/b80e71bi66xn6mu_map.svg"; //west kelowna
-// import Map from "../../assets/images/maps/owy9opv2yju7kyu_map.svg"; //prince george
-import Map from "../../assets/images/maps/4r3uxe640dbr6nr_map.svg"; //abbotsford
 
+import { useNavigate } from "react-router";
 
 import Button from "../Button/Button";
 import AlternateSectionHeader from "../AlternateSectionHeader/AlternateSectionHeader";
+
 import ongoing from "../../assets/icons/ongoing.svg";
 import recovery from "../../assets/icons/recovery.svg";
 
 function DisasterDetailHero({ selectedDisaster }) {
 
-    // console.log("disaster detail hero", selectedDisaster);
+    const navigate = useNavigate();
 
     return (
         <section className="disaster-detail-hero">
@@ -40,7 +39,6 @@ function DisasterDetailHero({ selectedDisaster }) {
                 }
             </div>
 
-            {/* <AlternateSectionHeader alternateSectionHeading="Impact" /> */}
             <div className="disaster-detail-hero__impact-section">
                 <AlternateSectionHeader alternateSectionHeading="Impact" />
 
@@ -59,7 +57,11 @@ function DisasterDetailHero({ selectedDisaster }) {
 
             </div>
             <div className="disaster-detail-hero__button">
-                <Button modifier="--secondary" text='donate now' />
+                <Button
+                    modifier="--secondary"
+                    text='donate now'
+                    onClick={() => navigate(`/donate/${selectedDisaster?.type}`)}
+                />
             </div>
         </section>
     )
