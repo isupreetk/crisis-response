@@ -1,14 +1,13 @@
 @use "../../styles/mixins.scss" as *;
 @use "../../styles/variables.scss" as *;
 
-.section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.6875rem;
-}
-
 .section-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6875rem;
+
+  &__text {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,15 +20,19 @@
     position: relative;
 
     &::after {
-        content: '';
-        position: absolute;
-        top: calc(100% + 0.5rem);
-        height: 0.375rem;
-        width: 4.75rem;
-        background: $secondary;
-        left: 50%;
-        transform: translateX(-50%);
-        border-radius: 1px;
+      content: "";
+      position: absolute;
+      top: calc(100% + 0.5rem);
+      height: 0.375rem;
+      width: 4.75rem;
+      background: $secondary;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 1px;
     }
-
+  }
 }
+
+// .section-heading {
+
+// }

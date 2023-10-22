@@ -53,7 +53,7 @@ function App() {
               />
 
               <Route
-                path='donate/:id'
+                path='donate/:type'
                 element={<DonatePage />}
               />
 
@@ -64,9 +64,9 @@ function App() {
               />
 
             </Routes>
-            <Footer />
 
           </div>
+          <Footer />
         </BrowserRouter>
       </main>
 

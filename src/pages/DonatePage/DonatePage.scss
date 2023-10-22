@@ -1,0 +1,12 @@
+.donate {
+  border: 1px solid red;
+  padding: 0;
+
+  &__charity-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 64px;
+  }
+}
