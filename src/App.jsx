@@ -54,7 +54,7 @@ function App() {
 
               <Route
                 path='donate/:type'
-                element={<DonatePage />}
+                element={<DonatePage disasterData={disasterList} />}
               />
 
               <Route

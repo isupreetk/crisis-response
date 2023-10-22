@@ -9,6 +9,8 @@ import RecoveryTips from '../../components/RecoveryTips/RecoveryTips';
 import Button from '../../components/Button/Button';
 import SectionHeader from '../../components/SectionHeader/SectionHeader';
 import ShareStoryModal from '../../components/ShareStoryModal/ShareStoryModal';
+import ExperienceList from '../../components/ExperienceList/ExperienceList';
+
 
 function GetHelpPage({ disasterData, addExperienceComment }) {
 
@@ -37,15 +39,7 @@ function GetHelpPage({ disasterData, addExperienceComment }) {
             </div>
 
 
-
-            {/* TODO: make into component */}
-            <div className='comment-cards'>
-                {
-                    selectedDisaster.experiences.map(
-                        experience => <ExperienceComment key={experience.id} experience={experience} />
-                    )}
-            </div>
-
+            <ExperienceList experiences={selectedDisaster.experiences} />
 
 
         </div>

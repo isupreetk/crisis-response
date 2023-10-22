@@ -3,34 +3,51 @@ import { useParams } from 'react-router-dom';
 import CharityCard from '../../components/CharityCard/CharityCard';
 import SectionHeader from '../../components/SectionHeader/SectionHeader';
 import { useEffect, useState } from 'react';
+import ExperienceList from '../../components/ExperienceList/ExperienceList';
+import charityData from '../../data/charities.json';
 
-function DonatePage() {
+function DonatePage({ disasterData }) {
 
     const params = useParams();
     const [type, setType] = useState(params.type);
+    const [experiences, setExperiences] = useState();
 
 
-    // get charity info
     useEffect(() => {
         setType(params.type);
-    }, [])
+        setExperiences(
+            disasterData
+                .filter(disaster => disaster.type === params.type)
+                .map(disaster => disaster.experiences)
+                .flat()
+        );
+    }, [params])
 
 
     return (
         <div className='donate'>
-            <SectionHeader sectionHeading={`Donate to non-profit ${type} relief funds`} />
+            <SectionHeader
+                sectionHeading={`Donate to non-profit ${type} relief funds`}
+            />
 
-            {/*TODO:  loop through charities with type */}
 
             <div className='donate__charity-cards'>
-                <CharityCard logo="/images/charity/red-cross.svg" org="Canadian Red Cross" fund="BC Fires Appeal" link="https://donate.redcross.ca/page/133830/donate/1?locale=en-CA" />
 
-                <CharityCard logo="/images/charity/united-way.svg" org="Canadian Red Cross" fund="BC Fires Appeal" link="https://donate.redcross.ca/page/133830/donate/1?locale=en-CA" />
+                {
+                    charityData
+                        .filter(charity => charity.type === type)
+                        .map((charity, index) => <CharityCard charity={charity} key={index} />)
+                }
+
             </div>
 
-            <SectionHeader sectionHeading={`Donate to impacted individuals`} />
+            <SectionHeader
+                sectionHeading={`Donate to impacted individuals`}
+            />
 
-
+            <ExperienceList
+                experiences={experiences}
+            />
 
 
         </div>
