@@ -23,7 +23,7 @@ function NavBar() {
                         onClick={() => setIsOpen(prev => !prev)}
                         className="navbar__menu"
                     />
-                    <p className="navbar__logo">OneToOne Relief</p>
+                    <p className="navbar__logo">Crisis Connect</p>
                 </div>
                 <Avatar photoUrl="/images/profile/CurrentUser.jpg" modifier='--nav' />
             </div>
