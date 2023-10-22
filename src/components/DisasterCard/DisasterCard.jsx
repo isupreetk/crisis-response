@@ -10,7 +10,7 @@ function DisasterCard({ disaster }) {
     return (
         <article className='disaster-card'>
             <div className='disaster-card__img-container'>
-                <img src={disaster.coverPhoto} alt="placeholder" />
+                <img className='disaster-card__img' src={disaster.coverPhoto} alt="photo of disaster" />
                 {disaster.status == "ongoing" && <img src={ongoing} alt="ongoing" className='disaster-card__status' />}
                 {disaster.status == "recovery" && <img src={recovery} alt="recovery" className='disaster-card__status' />}
             </div>

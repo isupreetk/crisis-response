@@ -2,6 +2,7 @@
 import Avatar from "../Avatar/Avatar";
 import menuIcon from '../../assets/icons/hamburger.svg';
 import closeX from '../../assets/icons/closingX.svg';
+import currentUserIcon from '../../assets/images/default-avatar.svg';
 
 import "./NavBar.scss";
 
@@ -24,7 +25,7 @@ function NavBar() {
                     />
                     <p className="navbar__logo">OneToOne Relief</p>
                 </div>
-                <Avatar photoUrl="https://picsum.photos/200" modifier='--nav' />
+                <Avatar photoUrl="/images/profile/CurrentUser.jpg" modifier='--nav' />
             </div>
 
             {/* Links */}

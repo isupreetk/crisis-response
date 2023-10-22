@@ -5,19 +5,20 @@
   box-shadow: $box-shadow;
   padding: 23px 18px;
   border-radius: $border-radius-lg;
-
-  @include flexbox(
-    $direction: column,
-  );
-  
+  @include flexbox($direction: column);
   gap: 36px;
 
   &__needs-container {
     display: inline-flex;
     gap: 6px;
+    width: 100%;
     flex-wrap: wrap;
     align-items: flex-start;
     align-content: flex-start;
+  }
+
+  &__needs {
+    width: 100%;
   }
 
   &__buttons {
