@@ -26,20 +26,28 @@ function DonatePage({ disasterData }) {
 
     return (
         <div className='donate'>
-            <SectionHeader
-                sectionHeading={`Donate to non-profit ${type} relief funds`}
-            />
 
+            <div className='donate__header'>
 
-            <div className='donate__charity-cards'>
+                <SectionHeader
+                    sectionHeading={`Donate to non-profit ${type} relief funds`}
+                />
 
-                {
-                    charityData
-                        .filter(charity => charity.type === type)
-                        .map((charity, index) => <CharityCard charity={charity} key={index} />)
-                }
+                <div className='donate__charity-cards'>
+
+                    {
+                        charityData
+                            .filter(charity => charity.type === type)
+                            .map((charity, index) => <CharityCard charity={charity} key={index} />)
+                    }
+
+                </div>
 
             </div>
+
+
+
+
 
             <SectionHeader
                 sectionHeading={`Donate to impacted individuals`}
