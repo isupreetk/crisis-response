@@ -1,24 +1,30 @@
 import SectionHeader from "../SectionHeader/SectionHeader";
-import RemoveIcon from "../../assets/icons/remove.svg";
-import "./RecoveryTips.scss";
 
-function RecoveryTips({ selectedDisaster }) {
+import "./RecoveryTips.scss";
+import tipData from '../../data/tips.json'
+import { useEffect, useState } from "react";
+import RecoveryTip from "../RecoveryTip/RecoveryTip";
+
+
+function RecoveryTips({ type }) {
+
+    const [tips, setTips] = useState(tipData[type])
+
+    useEffect(() => {
+        setTips(tipData[type])
+    }, [type])
+
+
     return (
         <section className="recovery-tips">
-            <SectionHeader sectionHeading={selectedDisaster?.title} />
+            <SectionHeader sectionHeading={`${type} recovery tips`} />
             <ol className="recovery-tips__list">
-                {selectedDisaster?.tips.map((tip, index) => {
-                    return (
-                        <li key={index} className="recovery-tips__list-item">
-                            <div className="recovery-tips__title-container">
-                                <h5>{tip.title}</h5>
-                                <img src={RemoveIcon} alt="remove icon" />
-                            </div>
-                            <p>{tip.content1}</p>
-                            <p>{tip.content2}</p>
-                        </li>
-                    )
-                })}
+
+                {tips.map((tip, index) => <RecoveryTip
+                    tip={tip}
+                    key={index}
+                    last={index === (tips.length - 1)} />)}
+
             </ol>
         </section>
     )

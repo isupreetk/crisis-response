@@ -24,7 +24,7 @@ function GetHelpPage({ disasterData, addExperienceComment }) {
     return (
         <div className='get-help-page'>
             <DisasterDetailHero selectedDisaster={selectedDisaster} />
-            <RecoveryTips selectedDisaster={selectedDisaster} />
+            <RecoveryTips type={selectedDisaster.type} />
 
 
             <div className="get-help-page__support">
