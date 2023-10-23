@@ -1,5 +1,5 @@
 import './DonatePage.scss';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import CharityCard from '../../components/CharityCard/CharityCard';
 import SectionHeader from '../../components/SectionHeader/SectionHeader';
 import { useEffect, useState } from 'react';
@@ -9,6 +9,8 @@ import charityData from '../../data/charities.json';
 function DonatePage({ disasterData }) {
 
     const params = useParams();
+    const navigate = useNavigate();
+
     const [type, setType] = useState(params.type);
     const [experiences, setExperiences] = useState();
 
@@ -16,13 +18,19 @@ function DonatePage({ disasterData }) {
     useEffect(() => {
 
 
-        setType(params.type);
-        setExperiences(
-            disasterData
-                .filter(disaster => disaster.type === params.type)
-                .map(disaster => disaster.experiences)
-                .flat()
-        );
+        if (type === 'flood' || type === 'wildfire') {
+            setType(params.type);
+            setExperiences(
+                disasterData
+                    .filter(disaster => disaster.type === params.type)
+                    .map(disaster => disaster.experiences)
+                    .flat()
+            );
+        } else {
+            navigate('/not-found')
+        }
+
+
     }, [params])
 
     useEffect(() => {

@@ -14,7 +14,7 @@ import NotFoundPage from './pages/NotFoundPage/NotFoundPage';
 // components 
 import NavBar from './components/NavBar/NavBar';
 import Footer from './components/Footer/Footer';
-
+import PrototypeDescription from './components/PrototypeDescription/PrototypeDescription';
 import disasterData from './data/disasters.json';
 
 function App() {
@@ -35,6 +35,7 @@ function App() {
 
   return (
     <>
+      < PrototypeDescription />
       <main className='app'>
         <BrowserRouter>
           <NavBar />

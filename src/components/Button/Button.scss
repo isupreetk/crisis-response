@@ -5,13 +5,14 @@
   @include flexbox;
   position: relative;
   background-color: $primary;
-  height: 2.5625rem;
+  min-height: 2.5625rem;
   width: 100%;
   text-transform: uppercase;
   border-radius: $border-radius-sm;
   transition: $transition;
   font-size: 18px;
   font-weight: 600;
+  gap: 10px;
   border: none;
 
   &:hover {

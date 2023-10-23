@@ -20,7 +20,7 @@ function RecoveryTips({ type }) {
             <SectionHeader sectionHeading={`${type} recovery tips`} />
             <ol className="recovery-tips__list">
 
-                {tips.map((tip, index) => <RecoveryTip
+                {tips?.map((tip, index) => <RecoveryTip
                     tip={tip}
                     key={index}
                     last={index === (tips.length - 1)} />)}

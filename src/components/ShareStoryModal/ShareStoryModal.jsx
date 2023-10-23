@@ -9,9 +9,9 @@ import { v4 as uuidv4 } from 'uuid';
 function ShareStoryModal({ show, closeHandler, selectedDisaster, addExperienceComment }) {
     const [storyText, setStoryText] = useState('');
     const [needs, setNeeds] = useState({
-        needsFood: true,
+        needsFood: false,
         needsClothing: false,
-        needsHousing: false,
+        needsHousing: true,
     })
 
 
@@ -140,6 +140,8 @@ function ShareStoryModal({ show, closeHandler, selectedDisaster, addExperienceCo
                     </div>
                     <Button text="Share your story" disabled={storyText.trim() === ''} />
 
+
+                    <div className='story-form__artificial-space'></div>
                 </form>
 
 
