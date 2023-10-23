@@ -1,5 +1,5 @@
 import './GetHelpPage.scss';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import ExperienceComment from '../../components/ExperienceComment/ExperienceComment';
 
 import { useState, useEffect } from 'react';
@@ -17,18 +17,22 @@ function GetHelpPage({ disasterData, addExperienceComment }) {
     const [showStoryModal, setShowStoryModal] = useState(false);
 
     const params = useParams();
+    const navigate = useNavigate();
 
     const selectedDisaster = disasterData.find((disaster => disaster.id === params.id));
 
 
     useEffect(() => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
-    }, [])
+        if (!selectedDisaster) {
+            navigate('/not-found');
+        }
+    }, [params])
 
     return (
         <div className='get-help-page'>
             <DisasterDetailHero selectedDisaster={selectedDisaster} />
-            <RecoveryTips type={selectedDisaster.type} />
+            <RecoveryTips type={selectedDisaster?.type} />
 
 
             <div className="get-help-page__support">
@@ -43,7 +47,7 @@ function GetHelpPage({ disasterData, addExperienceComment }) {
             </div>
 
 
-            <ExperienceList experiences={selectedDisaster.experiences} />
+            <ExperienceList experiences={selectedDisaster?.experiences} />
 
 
         </div>
