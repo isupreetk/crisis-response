@@ -10,15 +10,15 @@ function DisasterCard({ disaster }) {
     return (
         <article className='disaster-card'>
             <div className='disaster-card__img-container'>
-                <img className='disaster-card__img' src={disaster.coverPhoto} alt="photo of disaster" />
-                {disaster.status == "ongoing" && <img src={ongoing} alt="ongoing" className='disaster-card__status' />}
-                {disaster.status == "recovery" && <img src={recovery} alt="recovery" className='disaster-card__status' />}
+                <img className='disaster-card__img' src={disaster.coverPhoto} alt="disaster" />
+                {disaster.status === "ongoing" && <img src={ongoing} alt="ongoing" className='disaster-card__status' />}
+                {disaster.status === "recovery" && <img src={recovery} alt="recovery" className='disaster-card__status' />}
             </div>
             <div className='disaster-card__footer'>
                 <div className='disaster-card__footer-text'>
                     <h4 className='disaster-card__name'>{disaster.name}</h4>
                     <div className='disaster-card__date'>
-                        {disaster.status == "ongoing"
+                        {disaster.status === "ongoing"
                             ? <p className='disaster-card__date'>
                                 <span className='disaster-card__date--highlight'>
                                     Started on:

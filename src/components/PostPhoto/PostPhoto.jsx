@@ -13,7 +13,7 @@ function PostPhoto({ photoUrl, modal }) {
                     img src={photoUrl}
                     onClick={() => modal && setShowModal(true)}
                     className="post-photo__img"
-                    alt="photo of disaster"
+                    alt="disaster"
                 />
             }
 

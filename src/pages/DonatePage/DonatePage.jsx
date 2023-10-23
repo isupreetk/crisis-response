@@ -30,7 +30,7 @@ function DonatePage({ disasterData }) {
             navigate('/not-found')
         }
 
-
+// eslint-disable-next-line
     }, [params])
 
     useEffect(() => {

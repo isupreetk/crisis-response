@@ -2,7 +2,8 @@ import './ShareStoryModal.scss';
 import Button from '../Button/Button';
 import uploadIcon from '../../assets/icons/upload.svg';
 import Avatar from '../Avatar/Avatar';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
+// import { useEffect } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import PostPhoto from '../PostPhoto/PostPhoto';
 

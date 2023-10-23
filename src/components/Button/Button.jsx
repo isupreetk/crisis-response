@@ -6,7 +6,7 @@ function Button({ modifier, text, icon, ...buttonAttributes }) {
             className={`button button${modifier}`}
             {...buttonAttributes}
         >
-            {icon && <img src={icon}></img>}
+            {icon && <img src={icon} alt="button icon"></img>}
             <div className="button__text">{text}</div>
         </button>
     );

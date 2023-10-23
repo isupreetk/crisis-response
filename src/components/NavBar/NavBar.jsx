@@ -2,7 +2,7 @@
 import Avatar from "../Avatar/Avatar";
 import menuIcon from '../../assets/icons/hamburger.svg';
 import closeX from '../../assets/icons/closingX.svg';
-import currentUserIcon from '../../assets/images/default-avatar.svg';
+// import currentUserIcon from '../../assets/images/default-avatar.svg';
 
 import "./NavBar.scss";
 

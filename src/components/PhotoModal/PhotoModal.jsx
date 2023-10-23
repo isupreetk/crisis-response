@@ -12,7 +12,7 @@ function PhotoModal({ photoUrl, show, setShow }) {
             <div className="photo-modal__content">
                 <img src={photoUrl}
                     className="photo-modal__img"
-                    alt="photo of disaster"
+                    alt="disaster"
                 />
             </div>
         </div>
