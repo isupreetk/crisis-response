@@ -6,6 +6,7 @@ import currentUserIcon from '../../assets/images/default-avatar.svg';
 
 import "./NavBar.scss";
 
+import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
