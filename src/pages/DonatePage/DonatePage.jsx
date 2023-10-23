@@ -14,6 +14,8 @@ function DonatePage({ disasterData }) {
 
 
     useEffect(() => {
+
+
         setType(params.type);
         setExperiences(
             disasterData
@@ -22,6 +24,10 @@ function DonatePage({ disasterData }) {
                 .flat()
         );
     }, [params])
+
+    useEffect(() => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, [])
 
 
     return (

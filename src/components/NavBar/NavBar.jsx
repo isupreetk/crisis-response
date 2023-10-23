@@ -12,6 +12,7 @@ import { Link } from "react-router-dom";
 
 function NavBar() {
     const [isOpen, setIsOpen] = useState(false);
+    const navigate = useNavigate();
 
     return (
         <nav className="navbar">
@@ -24,7 +25,7 @@ function NavBar() {
                         onClick={() => setIsOpen(prev => !prev)}
                         className="navbar__menu"
                     />
-                    <p className="navbar__logo">Crisis Connect</p>
+                    <p className="navbar__logo" onClick={() => navigate('/')}>Crisis Connect</p>
                 </div>
                 <Avatar photoUrl="/images/profile/CurrentUser.jpg" modifier='--nav' />
             </div>

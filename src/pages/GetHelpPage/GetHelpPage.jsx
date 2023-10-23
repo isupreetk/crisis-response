@@ -21,6 +21,10 @@ function GetHelpPage({ disasterData, addExperienceComment }) {
     const selectedDisaster = disasterData.find((disaster => disaster.id === params.id));
 
 
+    useEffect(() => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, [])
+
     return (
         <div className='get-help-page'>
             <DisasterDetailHero selectedDisaster={selectedDisaster} />
