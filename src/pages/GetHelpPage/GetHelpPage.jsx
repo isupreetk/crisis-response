@@ -1,7 +1,6 @@
 import './GetHelpPage.scss';
-import { useParams, useNavigate } from 'react-router-dom';
-import ExperienceComment from '../../components/ExperienceComment/ExperienceComment';
 
+import { useParams, useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 
 import DisasterDetailHero from '../../components/DisasterDetailHero/DisasterDetailHero';
@@ -27,6 +26,7 @@ function GetHelpPage({ disasterData, addExperienceComment }) {
         if (!selectedDisaster) {
             navigate('/not-found');
         }
+        // eslint-disable-next-line
     }, [params])
 
     return (
