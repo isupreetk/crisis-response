@@ -12,7 +12,8 @@ import { FormatDateFromTimeStamp } from '../../scripts/FormatDateFromTimeStamp';
 import SaveIcon from '../../assets/icons/save.svg';
 import commentIcon from '../../assets/icons/comment.svg';
 import shareIcon from '../../assets/icons/share.svg';
-
+import messageIcon from '../../assets/icons/message.svg';
+import donateIcon from '../../assets/icons/donate.svg';
 
 function ExperienceComment({ experience }) {
     return (
@@ -66,8 +67,8 @@ function ExperienceComment({ experience }) {
             <div className="comment__footer">
 
                 <div className="comment__buttons">
-                    <Button text="Donate" modifier="--secondary" />
-                    <Button text="Message" modifier="--light" />
+                    <Button text="Donate" modifier="--secondary" icon={donateIcon} />
+                    <Button text="Message" modifier="--light" icon={messageIcon} />
                 </div>
 
                 <div className='comment__bottom-btns'>
