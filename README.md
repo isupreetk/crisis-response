@@ -49,7 +49,7 @@ Natural disasters events are escalating due to global warming, putting pressure 
 Our initiative is to ensure impacted individuals within BC have immediate access to critical information during crises. This empowers them to make well-informed decisions and obtain the urgent support they require.
 
 ## 💡 Our Solution
-We have developed an interactive platform tailored for BC's natural disaster survivors, facilitating direct connections with their community for personalized, one-on-one support beyond governmental aid. This platform not only encourages real-time interaction and firsthand information sharing but also links affected individuals directly to emergency services and vital resources. By providing real-time updates on assistance needs and immediate access to essential information, our solution stands out from traditional relief programs, ensuring expedited post-crisis recovery when every second counts.
+We've developed an interactive platform tailored for BC's natural disaster survivors, facilitating direct connections with their community for personalized, one-on-one support beyond governmental aid. This platform not only encourages real-time interaction and firsthand information sharing but also links affected individuals directly to emergency services and vital resources. By providing real-time updates on assistance needs and immediate access to essential information, our solution stands out from traditional relief programs, ensuring expedited post-crisis recovery when every second counts.
 
 ## 🌍 Societal Impact
 - Creating a bridge between those affected by disasters and the aid they require.
@@ -77,8 +77,18 @@ Experience our solution firsthand by checking out:
 
 </div>
 
-## 🛠️ Installation Instructions
+### Webpage Features
+- This front-end application was built with react.js to resemble the agreed upon design.
+- On the landing page, the user will see current disasters and their respective status occurring in their area. 
+- Within a given disaster, clicking on 'get help' or 'donate' takes the user to the appropriate page.
+- The 'get help' page provides the user with some detailed steps to take when recovering from experiencing the respective natural disaster, and provides them an opportunity to share their story and upload images of their experience. Other users' stories are displayed to encourage support. 
+- The donation page lists a few non-profit charities to donate to, as well as listing people that are in need of support. In the future, this will allow users to directly donate to impacted individuals.
 
+## 🛠️ Installation Instructions
+To download, view our code, and run our project locally: 
+1. Clone this repository
+2. cd into the cloned directory and install dependencies by running `npm i`
+3. Start the react development server by running `npm start`
 
 
 ## 🛤️ Lessons From Our Journey
@@ -87,9 +97,9 @@ Experience our solution firsthand by checking out:
 - **Time Management:** Balancing quality work with strict deadlines was challenging. We had to prioritize tasks efficiently to meet our goals.
 
 ## 🚀 Upcoming Updates
-- We plan to add a **reporting function** so users can directly report natural disasters they are experiencing.
-- We are set to expand the platform's capabilities by introducing a login system, donation transaction form, chat functions, and more **essential menu options**.
-- While our current design is mobile-focused, we are working to translate it into a user-friendly **desktop web version**.
+- We plan to add a **reporting function** so users can directly report natural disasters they're experiencing.
+- We're set to expand the platform's capabilities by introducing a login system, donation transaction form, chat functions, and more **essential menu options**.
+- While our current design is mobile-focused, we're working to translate it into a user-friendly **desktop web version**.
 
 ## 📚 References
 #### Presentation Slides
