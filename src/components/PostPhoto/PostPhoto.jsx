@@ -2,7 +2,7 @@ import { useState } from 'react';
 import PhotoModal from '../PhotoModal/PhotoModal';
 import './PostPhoto.scss'
 
-function PostPhoto({ photoUrl }) {
+function PostPhoto({ photoUrl, modal }) {
 
     const [showModal, setShowModal] = useState(false);
 
@@ -11,7 +11,7 @@ function PostPhoto({ photoUrl }) {
             {photoUrl
                 && <
                     img src={photoUrl}
-                    onClick={() => setShowModal(true)}
+                    onClick={() => modal && setShowModal(true)}
                     className="post-photo__img"
                     alt="photo of disaster"
                 />

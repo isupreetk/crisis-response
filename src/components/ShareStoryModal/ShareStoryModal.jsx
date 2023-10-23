@@ -4,9 +4,12 @@ import uploadIcon from '../../assets/icons/upload.svg';
 import Avatar from '../Avatar/Avatar';
 import { useState, useEffect } from 'react';
 import { v4 as uuidv4 } from 'uuid';
-
+import PostPhoto from '../PostPhoto/PostPhoto';
 
 function ShareStoryModal({ show, closeHandler, selectedDisaster, addExperienceComment }) {
+
+
+    const [preview, setPreview] = useState([]);
     const [storyText, setStoryText] = useState('');
     const [needs, setNeeds] = useState({
         needsFood: false,
@@ -26,15 +29,47 @@ function ShareStoryModal({ show, closeHandler, selectedDisaster, addExperienceCo
             needsHousing: needs.needsHousing,
             needsClothing: needs.needsClothing,
             numComments: 0,
-            photos: [],
+            photos: preview,
             comment: storyText,
             timestamp: Math.floor(Date.now() / 1000)
         }
 
+        setPreview([]);
+        setStoryText('');
+        setNeeds({
+            needsFood: false,
+            needsClothing: false,
+            needsHousing: true,
+        })
         addExperienceComment(newExperienceComment, selectedDisaster.id);
         closeHandler();
 
     }
+
+
+    const handleImageChange = (e) => {
+        const files = Array.from(e.target.files); // Convert FileList to Array
+        const validImageTypes = ['image/gif', 'image/jpeg', 'image/png'];
+
+        const validFiles = files.filter(file => validImageTypes.includes(file.type)).slice(0, 3); // Only take first 3 valid images
+
+        if (validFiles.length > 0) {
+
+            const fileReaders = validFiles.map(file => {
+                const reader = new FileReader();
+                return new Promise((resolve, reject) => {
+                    reader.readAsDataURL(file);
+                    reader.onloadend = () => resolve(reader.result);
+                    reader.onerror = reject;
+                });
+            });
+
+            Promise.all(fileReaders).then(results => {
+                setPreview(results);
+            });
+
+        }
+    };
 
     if (!show) return null;
     return (
@@ -71,12 +106,24 @@ function ShareStoryModal({ show, closeHandler, selectedDisaster, addExperienceCo
                     <div className="story-form__form-section">
                         <label className='story-form__label'>
                             Upload Images
+
+                            <div className='story-form__upload-photo'>
+                                <img src={uploadIcon}
+                                    className="story-form__icon"
+                                    alt="upload click" />
+                                <input type="file" onChange={handleImageChange} multiple />
+
+                                {preview.length > 0 &&
+                                    <div className="story-form__photo-preview">
+                                        {preview.map((photo, index) => <PostPhoto photoUrl={photo} key={index} modal={false} />)}
+                                    </div>
+
+
+                                }
+
+
+                            </div>
                         </label>
-                        <div className='story-form__upload-photo'>
-                            <img src={uploadIcon}
-                                className="story-form__icon"
-                                alt="upload click" />
-                        </div>
                     </div>
 
                     <div className="story-form__form-section">
