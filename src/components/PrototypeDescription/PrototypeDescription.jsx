@@ -5,7 +5,7 @@ function PrototypeDescription() {
 
     return (
         <div className='prototype-description'>
-            <a href="https://github.com/anagelberg/crisis-response" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/isupreetk/crisis-response" target="_blank" rel="noopener noreferrer">
                 <img src={githubIcon} alt="github icon" />
             </a>
         </div>
