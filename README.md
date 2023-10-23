@@ -77,12 +77,6 @@ Experience our solution firsthand by checking out:
 
 </div>
 
-### Webpage Features
-- This front-end application was built with react.js to resemble the agreed upon design.
-- On the landing page, the user will see current disasters and their respective status occurring in their area. 
-- Within a given disaster, clicking on 'get help' or 'donate' takes the user to the appropriate page.
-- The 'get help' page provides the user with some detailed steps to take when recovering from experiencing the respective natural disaster, and provides them an opportunity to share their story and upload images of their experience. Other users' stories are displayed to encourage support. 
-- The donation page lists a few non-profit charities to donate to, as well as listing people that are in need of support. In the future, this will allow users to directly donate to impacted individuals.
 
 ## 🛠️ Installation Instructions
 To download, view our code, and run our project locally: 
