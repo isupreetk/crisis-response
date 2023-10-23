@@ -10,12 +10,16 @@ import PostPhoto from '../PostPhoto/PostPhoto';
 import { FormatDateFromTimeStamp } from '../../scripts/FormatDateFromTimeStamp';
 
 import SaveIcon from '../../assets/icons/save.svg';
+import SaveFilled from '../../assets/icons/save-filled.svg';
 import commentIcon from '../../assets/icons/comment.svg';
 import shareIcon from '../../assets/icons/share.svg';
 import messageIcon from '../../assets/icons/message.svg';
 import donateIcon from '../../assets/icons/donate.svg';
+import { useState } from 'react';
 
 function ExperienceComment({ experience }) {
+    const [saved, setSaved] = useState(false);
+
     return (
         <article className='comment'>
             <div className="comment__header">
@@ -26,7 +30,7 @@ function ExperienceComment({ experience }) {
                         <p className='comment__sublabel'>{FormatDateFromTimeStamp(experience.timestamp)}</p>
                     </div>
                     <div className='comment__save'>
-                        <img src={SaveIcon} alt="save icon" className="comment__save-icon" />
+                        <img src={saved ? SaveFilled : SaveIcon} alt="save icon" className="comment__save-icon" onClick={() => setSaved(prev => !prev)} />
                         <p className='comment__sublabel'>Save</p>
                     </div>
                 </div>
