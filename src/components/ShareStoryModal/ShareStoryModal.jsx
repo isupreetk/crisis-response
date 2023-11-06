@@ -15,7 +15,7 @@ function ShareStoryModal({ show, closeHandler, selectedDisaster, addExperienceCo
     const [needs, setNeeds] = useState({
         needsFood: false,
         needsClothing: false,
-        needsHousing: true,
+        needsHousing: false,
     })
 
 
@@ -40,7 +40,7 @@ function ShareStoryModal({ show, closeHandler, selectedDisaster, addExperienceCo
         setNeeds({
             needsFood: false,
             needsClothing: false,
-            needsHousing: true,
+            needsHousing: false,
         })
         addExperienceComment(newExperienceComment, selectedDisaster.id);
         closeHandler();
